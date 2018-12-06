@@ -45,11 +45,11 @@
 <div class="overlay" style="background: #4d4d4d"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
-		<a href="/blog/" class="profilepic">
+		<a href="/" class="profilepic">
 			<img src="/img/header_icon.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/blog/">zhaojh</a></h1>
+		  <h1 class="header-author"><a href="/">zhaojh</a></h1>
 		</hgroup>
 		
 		<p class="header-subtitle">喧闹中保持一份宁静，在繁华中保持一份自我!</p>
@@ -60,7 +60,7 @@
 			
 				<li><a href="/blog/">主页</a></li>
 	        
-				<li><a href="/blog/categories">分类</a></li>
+				<li><a href="/blog/tags/随笔/">随笔</a></li>
 	        
 			</ul>
 		</nav>
@@ -71,6 +71,10 @@
     			
             
     			
+    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
+    			
+            
+    			
     			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
     			
             
@@ -78,9 +82,13 @@
 		<nav class="header-nav">
 			<div class="social">
 				
+					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+		        
 					<a class="weibo" target="_blank" href="https://weibo.com/2940501484/profile?topnav=1&wvr=6&is_all=1" title="weibo"><i class="icon-weibo"></i></a>
 		        
-					<a class="jianshu" target="_blank" href="https://www.jianshu.com/u/f7e42acbb088" title="jianshu"><i class="icon-jianshu"></i></a>
+					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+		        
+					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
 		        
 			</div>
 		</nav>
@@ -117,9 +125,13 @@
 			<nav class="header-nav">
 				<div class="social">
 					
+						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+			        
 						<a class="weibo" target="_blank" href="https://weibo.com/2940501484/profile?topnav=1&wvr=6&is_all=1" title="weibo"><i class="icon-weibo"></i></a>
 			        
-						<a class="jianshu" target="_blank" href="https://www.jianshu.com/u/f7e42acbb088" title="jianshu"><i class="icon-jianshu"></i></a>
+						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+			        
+						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
 			        
 				</div>
 			</nav>
@@ -130,7 +142,7 @@
 				
 					<li style="width: 50%"><a href="/blog/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/blog/categories">分类</a></li>
+					<li style="width: 50%"><a href="/blog/tags/随笔/">随笔</a></li>
 		        
 				</ul>
 			</nav>
@@ -146,6 +158,87 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-成长日记" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/blog/2018/11/09/成长日记/">我的成长日记</a>
+    </h1>
+  
+
+        
+        <a href="/blog/2018/11/09/成长日记/" class="archive-article-date">
+  	<time datetime="2018-11-09T06:10:28.188Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-09</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h5 id="1-This-app-could-not-be-installed-at-this-time"><a href="#1-This-app-could-not-be-installed-at-this-time" class="headerlink" title="1,This app could not be installed at this time."></a>1,This app could not be installed at this time.</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">1.点击模拟器: </span><br><span class="line">选择: </span><br><span class="line">Hardware -&gt; Erase All content and settings；清空模拟器的缓存 </span><br><span class="line">2.点击项目: </span><br><span class="line">把项目清一下 </span><br><span class="line">shift+cmd+K </span><br><span class="line">shift+opt+cmd+K </span><br><span class="line">3.重新运行就OK</span><br></pre></td></tr></table></figure>
+<h5 id="2-cocoapods发布命令"><a href="#2-cocoapods发布命令" class="headerlink" title="2,cocoapods发布命令"></a>2,cocoapods发布命令</h5><h6 id="私有"><a href="#私有" class="headerlink" title="私有:"></a>私有:</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//验证</span><br><span class="line">pod spec lint xxx.podspec --allow-warnings --verbose --use-libraries --sources=&apos;git@gitlab.xxx.com:xxx.git,https://github.com/CocoaPods/Specs&apos;</span><br><span class="line">//推送修改</span><br><span class="line">pod repo push xxx --allow-warnings  --verbose --use-libraries </span><br><span class="line">//第一次添加库</span><br><span class="line">pod repo add xxx  https://xxxx.git</span><br></pre></td></tr></table></figure>
+<h6 id="公共"><a href="#公共" class="headerlink" title="公共:"></a>公共:</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//验证</span><br><span class="line">pod spec lint xxx.podspec --allow-warnings  --verbose --use-libraries</span><br><span class="line">//发布</span><br><span class="line">pod trunk push xxx.podspec --allow-warnings  --verbose --use-libraries</span><br><span class="line">//添加到本地pod和远程对应(第一次)</span><br><span class="line">   pod repo add xxx git@xxx.git</span><br></pre></td></tr></table></figure>
+<h4 id="私有库制作"><a href="#私有库制作" class="headerlink" title="私有库制作:"></a>私有库制作:</h4>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">   1. 本地仓库路径------&gt; cd ~/.cocoapods/repos</span><br><span class="line">   2. 添加远程索引库----&gt; pod repo add  xxx  git.xxx.git</span><br><span class="line">   3. 创建库模板demo---&gt; pod lib create  xxx</span><br></pre></td></tr></table></figure>
+<p>   //找不到库?<br>   rm ~/Library/Caches/CocoaPods/search_index.json</p>
+<p>   pod update –no-repo-update 更新</p>
+<p>   <strong><em> 3, 静态库没法使用 use_frameworks! 标记 </em></strong><br>   pod报错: target has transitive dependencies that include static binaries</p>
+<p>   参考:<a href="https://www.jianshu.com/p/7f6a7e1b3235">https://www.jianshu.com/p/7f6a7e1b3235</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/blog/categories/iOS//" class="article-tag-list-link color4">iOS</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/blog/2018/11/09/成长日记/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-php环境搭建" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
   <div class="article-inner">
@@ -246,87 +339,6 @@
 
 
   
-    <article id="post-成长日记" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/blog/2018/11/09/成长日记/">我的成长日记</a>
-    </h1>
-  
-
-        
-        <a href="/blog/2018/11/09/成长日记/" class="archive-article-date">
-  	<time datetime="2018-11-09T06:10:28.188Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-09</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h5 id="1-This-app-could-not-be-installed-at-this-time"><a href="#1-This-app-could-not-be-installed-at-this-time" class="headerlink" title="1,This app could not be installed at this time."></a>1,This app could not be installed at this time.</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">1.点击模拟器: </span><br><span class="line">选择: </span><br><span class="line">Hardware -&gt; Erase All content and settings；清空模拟器的缓存 </span><br><span class="line">2.点击项目: </span><br><span class="line">把项目清一下 </span><br><span class="line">shift+cmd+K </span><br><span class="line">shift+opt+cmd+K </span><br><span class="line">3.重新运行就OK</span><br></pre></td></tr></table></figure>
-<h5 id="2-cocoapods发布命令"><a href="#2-cocoapods发布命令" class="headerlink" title="2,cocoapods发布命令"></a>2,cocoapods发布命令</h5><h6 id="私有"><a href="#私有" class="headerlink" title="私有:"></a>私有:</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//验证</span><br><span class="line">pod spec lint xxx.podspec --allow-warnings --verbose --use-libraries --sources=&apos;git@gitlab.xxx.com:xxx.git,https://github.com/CocoaPods/Specs&apos;</span><br><span class="line">//推送修改</span><br><span class="line">pod repo push xxx --allow-warnings  --verbose --use-libraries </span><br><span class="line">//第一次添加库</span><br><span class="line">pod repo add xxx  https://xxxx.git</span><br></pre></td></tr></table></figure>
-<h6 id="公共"><a href="#公共" class="headerlink" title="公共:"></a>公共:</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//验证</span><br><span class="line">pod spec lint xxx.podspec --allow-warnings  --verbose --use-libraries</span><br><span class="line">//发布</span><br><span class="line">pod trunk push xxx.podspec --allow-warnings  --verbose --use-libraries</span><br><span class="line">//添加到本地pod和远程对应(第一次)</span><br><span class="line">   pod repo add xxx git@xxx.git</span><br></pre></td></tr></table></figure>
-<h4 id="私有库制作"><a href="#私有库制作" class="headerlink" title="私有库制作:"></a>私有库制作:</h4>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">   1. 本地仓库路径------&gt; cd ~/.cocoapods/repos</span><br><span class="line">   2. 添加远程索引库----&gt; pod repo add  xxx  git.xxx.git</span><br><span class="line">   3. 创建库模板demo---&gt; pod lib create  xxx</span><br></pre></td></tr></table></figure>
-<p>   //找不到库?<br>   rm ~/Library/Caches/CocoaPods/search_index.json</p>
-<p>   pod update –no-repo-update 更新</p>
-<p>   <strong><em> 3, 静态库没法使用 use_frameworks! 标记 </em></strong><br>   pod报错: target has transitive dependencies that include static binaries</p>
-<p>   参考:<a href="https://www.jianshu.com/p/7f6a7e1b3235">https://www.jianshu.com/p/7f6a7e1b3235</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/blog/categories/iOS//" class="article-tag-list-link color4">iOS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/blog/2018/11/09/成长日记/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
 
 
@@ -381,17 +393,25 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
       
     
+      
+      
+      
+    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
+      
+        
+      
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -454,6 +474,38 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     	</section>
     
 
+    
+    	<section class="tools-section tools-section-friends" q-show="friends">
+  		
+        <ul class="search-ul">
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
+            </li>
+          
+        </ul>
+  		
+    	</section>
     
 
     
