@@ -8,22 +8,21 @@
   <link rel="dns-prefetch" href="https://www.jianshu.com/u/f7e42acbb088">
   <title>Mac PHP环境搭建 | zhaojh&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="// 一, 用终端登录远程1, 下载私钥copy到~/.ssh目录2, 在~/.ssh/config中添加配置123456Host your-custom-host-name  #自定义一个名字HostName xxx                #你的主机hostUser root                   #userPort 22ProxyCommand corkscrew xxx">
+  <meta name="description" content="一, 用终端登录远程1, 下载私钥copy到~/.ssh目录 2, 在~/.ssh/config中添加配置123456Host your-custom-host-name  #自定义一个名字HostName xxx                #你的主机hostUser root                   #userPort 22ProxyCommand corkscrew xxx 3">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Mac PHP环境搭建">
 <meta property="og:url" content="https://www.jianshu.com/u/f7e42acbb088/2018/11/09/php环境搭建/index.html">
 <meta property="og:site_name" content="zhaojh&#39;s blog">
-<meta property="og:description" content="// 一, 用终端登录远程1, 下载私钥copy到~/.ssh目录2, 在~/.ssh/config中添加配置123456Host your-custom-host-name  #自定义一个名字HostName xxx                #你的主机hostUser root                   #userPort 22ProxyCommand corkscrew xxx">
+<meta property="og:description" content="一, 用终端登录远程1, 下载私钥copy到~/.ssh目录 2, 在~/.ssh/config中添加配置123456Host your-custom-host-name  #自定义一个名字HostName xxx                #你的主机hostUser root                   #userPort 22ProxyCommand corkscrew xxx 3">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://www.jianshu.com/assets/keti-2.png">
-<meta property="og:image" content="https://www.jianshu.com/assets/phpstorm-config-1.png">
-<meta property="og:image" content="https://www.jianshu.com/assets/phpstorm-config-2.png">
-<meta property="og:image" content="https://www.jianshu.com/assets/phpstorm-config-3.png">
-<meta property="og:updated_time" content="2018-12-06T05:12:33.830Z">
+<meta property="og:image" content="https://www.jianshu.com/img/phpstorm-config-1.png">
+<meta property="og:image" content="https://www.jianshu.com/img/phpstorm-config-2.png">
+<meta property="og:image" content="https://www.jianshu.com/img/phpstorm-config-3.png">
+<meta property="og:updated_time" content="2018-12-06T05:36:39.794Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac PHP环境搭建">
-<meta name="twitter:description" content="// 一, 用终端登录远程1, 下载私钥copy到~/.ssh目录2, 在~/.ssh/config中添加配置123456Host your-custom-host-name  #自定义一个名字HostName xxx                #你的主机hostUser root                   #userPort 22ProxyCommand corkscrew xxx">
-<meta name="twitter:image" content="https://www.jianshu.com/assets/keti-2.png">
+<meta name="twitter:description" content="一, 用终端登录远程1, 下载私钥copy到~/.ssh目录 2, 在~/.ssh/config中添加配置123456Host your-custom-host-name  #自定义一个名字HostName xxx                #你的主机hostUser root                   #userPort 22ProxyCommand corkscrew xxx 3">
+<meta name="twitter:image" content="https://www.jianshu.com/img/phpstorm-config-1.png">
   
     <link rel="alternative" href="/atom.xml" title="zhaojh&#39;s blog" type="application/atom+xml">
   
@@ -66,7 +65,7 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/categories/">分类</a></li>
+				<li><a href="/categories/">分类</a></li>
 	        
 			</ul>
 		</nav>
@@ -136,7 +135,7 @@
 				
 					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/categories/">分类</a></li>
+					<li style="width: 50%"><a href="/categories/">分类</a></li>
 		        
 				</ul>
 			</nav>
@@ -171,21 +170,31 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>//<div align="center"><img src="/assets/keti-2.png" alt="图2.管脚配置图"></div></p>
-<h2 id="一-用终端登录远程"><a href="#一-用终端登录远程" class="headerlink" title="一, 用终端登录远程"></a>一, 用终端登录远程</h2><h3 id="1-下载私钥copy到-ssh目录"><a href="#1-下载私钥copy到-ssh目录" class="headerlink" title="1, 下载私钥copy到~/.ssh目录"></a>1, 下载私钥copy到<code>~/.ssh</code>目录</h3><h3 id="2-在-ssh-config中添加配置"><a href="#2-在-ssh-config中添加配置" class="headerlink" title="2, 在~/.ssh/config中添加配置"></a>2, 在<code>~/.ssh/config</code>中添加配置</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Host your-custom-host-name  #自定义一个名字</span><br><span class="line">HostName xxx                #你的主机host</span><br><span class="line">User root                   #user</span><br><span class="line">Port 22</span><br><span class="line">ProxyCommand corkscrew xxx 30080 %h %p  # xxx是你的domain 30080是你的端口 **注意替换**</span><br><span class="line">IdentityFile ~/.ssh/xxx                 # 私钥路径</span><br></pre></td></tr></table></figure>
-<h3 id="3-连接远程主机-ssh-your-custom-host-name"><a href="#3-连接远程主机-ssh-your-custom-host-name" class="headerlink" title="3, 连接远程主机  ssh your-custom-host-name"></a>3, 连接远程主机  <code>ssh your-custom-host-name</code></h3><p> 3.1 注意 步骤2用到了 <code>corkscrew</code> 如果没有安装 先安装一下<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> 安装corkscrew</span><br><span class="line"> sudo apt-get install corkscrew  </span><br><span class="line">```  </span><br><span class="line"> [安装教程参考这里](https://blog.csdn.net/luofengmacheng/article/details/35550889)</span><br><span class="line"> </span><br><span class="line"> 3.2 提示没权限,需要你输入密码? 如下</span><br></pre></td></tr></table></figure></p>
-<p>   Load key “/Users/zhaojh/.ssh/xxx.ssh-rsa”: bad permissions<br>   root@xxxxxx’s password:<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">解决: 给私钥加一下权限</span><br></pre></td></tr></table></figure></p>
-<p> cd ~/.ssh<br> ls -l<br> 然后chmod命令给你的私钥加上rw权限,最终效果是 <code>-rw-------</code></p>
-<p><code>`</code></p>
-<h3 id="3-3-再次执行-ssh-your-custom-host-name-连接成功"><a href="#3-3-再次执行-ssh-your-custom-host-name-连接成功" class="headerlink" title="3.3 再次执行 ssh your-custom-host-name 连接成功"></a>3.3 再次执行 <code>ssh your-custom-host-name</code> 连接成功</h3><h2 id="二-配置PHPStorm"><a href="#二-配置PHPStorm" class="headerlink" title="二, 配置PHPStorm"></a>二, 配置PHPStorm</h2><h3 id="1-选择-Tools-gt-Deployment-gt-Configuration-点击新增一个配置"><a href="#1-选择-Tools-gt-Deployment-gt-Configuration-点击新增一个配置" class="headerlink" title="1, 选择 Tools-&gt;Deployment-&gt;Configuration 点击新增一个配置"></a>1, 选择 <code>Tools-&gt;Deployment-&gt;Configuration</code> 点击新增一个配置</h3><p> Connection Tab</p>
-<p><div align="center"><img src="/assets/phpstorm-config-1.png" alt="Contaction Tab ">   </div></p>
+        <h2 id="一-用终端登录远程"><a href="#一-用终端登录远程" class="headerlink" title="一, 用终端登录远程"></a>一, 用终端登录远程</h2><h3 id="1-下载私钥copy到-ssh目录"><a href="#1-下载私钥copy到-ssh目录" class="headerlink" title="1, 下载私钥copy到~/.ssh目录"></a>1, 下载私钥copy到<code>~/.ssh</code>目录</h3><p><br></p>
+<h3 id="2-在-ssh-config中添加配置"><a href="#2-在-ssh-config中添加配置" class="headerlink" title="2, 在~/.ssh/config中添加配置"></a>2, 在<code>~/.ssh/config</code>中添加配置</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Host your-custom-host-name  #自定义一个名字</span><br><span class="line">HostName xxx                #你的主机host</span><br><span class="line">User root                   #user</span><br><span class="line">Port 22</span><br><span class="line">ProxyCommand corkscrew xxx 30080 %h %p  # xxx是你的domain 30080是你的端口 **注意替换**</span><br><span class="line">IdentityFile ~/.ssh/xxx                 # 私钥路径</span><br></pre></td></tr></table></figure>
+<p><br></p>
+<h3 id="3-连接远程主机-ssh-your-custom-host-name"><a href="#3-连接远程主机-ssh-your-custom-host-name" class="headerlink" title="3, 连接远程主机  ssh your-custom-host-name"></a>3, 连接远程主机  <code>ssh your-custom-host-name</code></h3><p><br></p>
+<p>3.1 注意 步骤2用到了 <code>corkscrew</code> 如果没有安装 先安装一下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">安装corkscrew</span><br><span class="line">sudo apt-get install corkscrew</span><br></pre></td></tr></table></figure></p>
+<p><a href="https://blog.csdn.net/luofengmacheng/article/details/35550889" target="_blank" rel="noopener">安装教程参考这里</a></p>
+<p>3.2 提示没权限,需要你输入密码? 如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Load key &quot;/Users/zhaojh/.ssh/xxx.ssh-rsa&quot;: bad permissions</span><br><span class="line">root@xxxxxx&apos;s password:</span><br><span class="line"></span><br><span class="line">---解决: 给私钥加一下权限</span><br><span class="line">cd ~/.ssh</span><br><span class="line">ls -l</span><br><span class="line">然后chmod命令给你的私钥加上rw权限,最终效果是: -rw------- .</span><br></pre></td></tr></table></figure></p>
+<h3 id="3-3-再次执行-ssh-your-custom-host-name-连接成功"><a href="#3-3-再次执行-ssh-your-custom-host-name-连接成功" class="headerlink" title="3.3 再次执行 ssh your-custom-host-name 连接成功"></a>3.3 再次执行 <code>ssh your-custom-host-name</code> 连接成功</h3><p><br></p>
+<h2 id="二-配置PHPStorm"><a href="#二-配置PHPStorm" class="headerlink" title="二, 配置PHPStorm"></a>二, 配置PHPStorm</h2><h3 id="1-选择-Tools-gt-Deployment-gt-Configuration-点击新增一个配置"><a href="#1-选择-Tools-gt-Deployment-gt-Configuration-点击新增一个配置" class="headerlink" title="1, 选择 Tools-&gt;Deployment-&gt;Configuration 点击新增一个配置"></a>1, 选择 <code>Tools-&gt;Deployment-&gt;Configuration</code> 点击新增一个配置</h3><p> <br></p>
+<p> Connection Tab</p>
+<p><div align="center"><img src="/img/phpstorm-config-1.png" alt="Contaction Tab ">   </div></p>
 <p>注意: 上面Root path 是映射到服务器上的地址, Port随便写一下, 下面会用命令映射</p>
+<p><br></p>
 <p> Mappings Tab</p>
-<p><div align="center"><img src="/assets/phpstorm-config-2.png" alt="Contaction Tab ">  </div></p>
-<h3 id="2-选择-Tools-gt-Deployment-gt-Options"><a href="#2-选择-Tools-gt-Deployment-gt-Options" class="headerlink" title="2, 选择 Tools-&gt;Deployment-&gt;Options"></a>2, 选择 <code>Tools-&gt;Deployment-&gt;Options</code></h3><p><div align="center"><img src="/assets/phpstorm-config-3.png" alt="Contaction Tab ">  </div></p>
-<h3 id="3-ssh-L-端口-127-0-0-1-22-your-custom-host-name-fN-your-custom-host-name-是上面自定义host名字"><a href="#3-ssh-L-端口-127-0-0-1-22-your-custom-host-name-fN-your-custom-host-name-是上面自定义host名字" class="headerlink" title="3,  ssh -L 端口:127.0.0.1:22  your-custom-host-name  -fN  #your-custom-host-name 是上面自定义host名字"></a>3,  ssh -L 端口:127.0.0.1:22  your-custom-host-name  -fN  #your-custom-host-name 是上面自定义host名字</h3><p>成功之后, 改动php文件 然后 <code>command+s</code> 保存就会自动上传到服务器</p>
+<p><div align="center"><img src="/img/phpstorm-config-2.png" alt="Contaction Tab ">  </div></p>
+<p><br></p>
+<h3 id="2-选择-Tools-gt-Deployment-gt-Options"><a href="#2-选择-Tools-gt-Deployment-gt-Options" class="headerlink" title="2, 选择 Tools-&gt;Deployment-&gt;Options"></a>2, 选择 <code>Tools-&gt;Deployment-&gt;Options</code></h3><p><div align="center"><img src="/img/phpstorm-config-3.png" alt="Contaction Tab ">  </div></p>
+<p><br></p>
+<h3 id="3-执行ssh-L-端口-127-0-0-1-22-your-custom-host-name-fN-your-custom-host-name-是上面自定义host名字"><a href="#3-执行ssh-L-端口-127-0-0-1-22-your-custom-host-name-fN-your-custom-host-name-是上面自定义host名字" class="headerlink" title="3,  执行ssh -L 端口:127.0.0.1:22  your-custom-host-name  -fN  #your-custom-host-name 是上面自定义host名字"></a>3,  执行<code>ssh -L 端口:127.0.0.1:22  your-custom-host-name  -fN</code>  #your-custom-host-name 是上面自定义host名字</h3><p>成功之后, 改动php文件 然后 <code>command+s</code> 保存就会自动上传到服务器</p>
+<p><br></p>
 <h3 id="4-如果代码从版本仓库clone到本地的-第一次要先将本地代码同步到服务器-Tools-gt-Deployment"><a href="#4-如果代码从版本仓库clone到本地的-第一次要先将本地代码同步到服务器-Tools-gt-Deployment" class="headerlink" title="4,如果代码从版本仓库clone到本地的 第一次要先将本地代码同步到服务器 Tools-&gt;Deployment"></a>4,如果代码从版本仓库clone到本地的 第一次要先将本地代码同步到服务器 <code>Tools-&gt;Deployment</code></h3><p>最后在webroot下新建一个index.php文件 写上一句 <code>echo &#39;Helloworld!&#39;;</code> 然后浏览器访问 http://{domain}/index.php 如果看到  <code>Helloworld!</code> 恭喜成功了!</p>
-<h2 id="三-adminer-php-登录mysql数据库"><a href="#三-adminer-php-登录mysql数据库" class="headerlink" title="三,adminer.php 登录mysql数据库"></a>三,adminer.php 登录mysql数据库</h2><h3 id="1-相比phpMyAdmin-adminer-php更方便就一个文件-到https-www-adminer-org-去下载"><a href="#1-相比phpMyAdmin-adminer-php更方便就一个文件-到https-www-adminer-org-去下载" class="headerlink" title="1,相比phpMyAdmin, adminer.php更方便就一个文件,到https://www.adminer.org/ 去下载"></a>1,相比<code>phpMyAdmin</code>, <code>adminer.php</code>更方便就一个文件,到<code>https://www.adminer.org/</code> 去下载</h3><h3 id="2-上面也看到了放在webroot-目录下面可以直接访问-下载之后去掉版本号之后为adminer-php-放到webroot下"><a href="#2-上面也看到了放在webroot-目录下面可以直接访问-下载之后去掉版本号之后为adminer-php-放到webroot下" class="headerlink" title="2,上面也看到了放在webroot 目录下面可以直接访问,下载之后去掉版本号之后为adminer.php 放到webroot下"></a>2,上面也看到了放在webroot 目录下面可以直接访问,下载之后去掉版本号之后为<code>adminer.php</code> 放到webroot下</h3><p>然后浏览器访问 http://{domain}/adminer.php 就会有数据库登录界面</p>
+<p><br></p>
+<h2 id="三-adminer-php-登录mysql数据库"><a href="#三-adminer-php-登录mysql数据库" class="headerlink" title="三,adminer.php 登录mysql数据库"></a>三,adminer.php 登录mysql数据库</h2><h3 id="1-相比phpMyAdmin-adminer-php更方便就一个文件-到https-www-adminer-org-去下载"><a href="#1-相比phpMyAdmin-adminer-php更方便就一个文件-到https-www-adminer-org-去下载" class="headerlink" title="1,相比phpMyAdmin, adminer.php更方便就一个文件,到https://www.adminer.org/ 去下载"></a>1,相比<code>phpMyAdmin</code>, <code>adminer.php</code>更方便就一个文件,到<code>https://www.adminer.org/</code> 去下载</h3><p><br></p>
+<h3 id="2-上面也看到了放在webroot-目录下面可以直接访问-下载之后去掉版本号之后为adminer-php-放到webroot下"><a href="#2-上面也看到了放在webroot-目录下面可以直接访问-下载之后去掉版本号之后为adminer-php-放到webroot下" class="headerlink" title="2,上面也看到了放在webroot 目录下面可以直接访问,下载之后去掉版本号之后为adminer.php 放到webroot下"></a>2,上面也看到了放在webroot 目录下面可以直接访问,下载之后去掉版本号之后为<code>adminer.php</code> 放到webroot下</h3><p>然后浏览器访问 http://{domain}/adminer.php 就会有数据库登录界面</p>
+<p><br></p>
 <p>步骤一连接服务器之后 执行<code>env | grep mysql</code>  会返回你mysql的登录信息</p>
 
       
@@ -227,7 +236,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/闲谈//" class="article-tag-list-link color3">闲谈</a>
+        			<a href="/categories/PHP//" class="article-tag-list-link color4">PHP</a>
         		</li>
       		
 		</ul>
@@ -334,7 +343,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一-用终端登录远程"><span class="toc-number">1.</span> <span class="toc-text">一, 用终端登录远程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-下载私钥copy到-ssh目录"><span class="toc-number">1.1.</span> <span class="toc-text">1, 下载私钥copy到~/.ssh目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-在-ssh-config中添加配置"><span class="toc-number">1.2.</span> <span class="toc-text">2, 在~/.ssh/config中添加配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-连接远程主机-ssh-your-custom-host-name"><span class="toc-number">1.3.</span> <span class="toc-text">3, 连接远程主机  ssh your-custom-host-name</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-再次执行-ssh-your-custom-host-name-连接成功"><span class="toc-number">1.4.</span> <span class="toc-text">3.3 再次执行 ssh your-custom-host-name 连接成功</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二-配置PHPStorm"><span class="toc-number">2.</span> <span class="toc-text">二, 配置PHPStorm</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-选择-Tools-gt-Deployment-gt-Configuration-点击新增一个配置"><span class="toc-number">2.1.</span> <span class="toc-text">1, 选择 Tools-&gt;Deployment-&gt;Configuration 点击新增一个配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-选择-Tools-gt-Deployment-gt-Options"><span class="toc-number">2.2.</span> <span class="toc-text">2, 选择 Tools-&gt;Deployment-&gt;Options</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-ssh-L-端口-127-0-0-1-22-your-custom-host-name-fN-your-custom-host-name-是上面自定义host名字"><span class="toc-number">2.3.</span> <span class="toc-text">3,  ssh -L 端口:127.0.0.1:22  your-custom-host-name  -fN  #your-custom-host-name 是上面自定义host名字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-如果代码从版本仓库clone到本地的-第一次要先将本地代码同步到服务器-Tools-gt-Deployment"><span class="toc-number">2.4.</span> <span class="toc-text">4,如果代码从版本仓库clone到本地的 第一次要先将本地代码同步到服务器 Tools-&gt;Deployment</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三-adminer-php-登录mysql数据库"><span class="toc-number">3.</span> <span class="toc-text">三,adminer.php 登录mysql数据库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-相比phpMyAdmin-adminer-php更方便就一个文件-到https-www-adminer-org-去下载"><span class="toc-number">3.1.</span> <span class="toc-text">1,相比phpMyAdmin, adminer.php更方便就一个文件,到https://www.adminer.org/ 去下载</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-上面也看到了放在webroot-目录下面可以直接访问-下载之后去掉版本号之后为adminer-php-放到webroot下"><span class="toc-number">3.2.</span> <span class="toc-text">2,上面也看到了放在webroot 目录下面可以直接访问,下载之后去掉版本号之后为adminer.php 放到webroot下</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一-用终端登录远程"><span class="toc-number">1.</span> <span class="toc-text">一, 用终端登录远程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-下载私钥copy到-ssh目录"><span class="toc-number">1.1.</span> <span class="toc-text">1, 下载私钥copy到~/.ssh目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-在-ssh-config中添加配置"><span class="toc-number">1.2.</span> <span class="toc-text">2, 在~/.ssh/config中添加配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-连接远程主机-ssh-your-custom-host-name"><span class="toc-number">1.3.</span> <span class="toc-text">3, 连接远程主机  ssh your-custom-host-name</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-再次执行-ssh-your-custom-host-name-连接成功"><span class="toc-number">1.4.</span> <span class="toc-text">3.3 再次执行 ssh your-custom-host-name 连接成功</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二-配置PHPStorm"><span class="toc-number">2.</span> <span class="toc-text">二, 配置PHPStorm</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-选择-Tools-gt-Deployment-gt-Configuration-点击新增一个配置"><span class="toc-number">2.1.</span> <span class="toc-text">1, 选择 Tools-&gt;Deployment-&gt;Configuration 点击新增一个配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-选择-Tools-gt-Deployment-gt-Options"><span class="toc-number">2.2.</span> <span class="toc-text">2, 选择 Tools-&gt;Deployment-&gt;Options</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-执行ssh-L-端口-127-0-0-1-22-your-custom-host-name-fN-your-custom-host-name-是上面自定义host名字"><span class="toc-number">2.3.</span> <span class="toc-text">3,  执行ssh -L 端口:127.0.0.1:22  your-custom-host-name  -fN  #your-custom-host-name 是上面自定义host名字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-如果代码从版本仓库clone到本地的-第一次要先将本地代码同步到服务器-Tools-gt-Deployment"><span class="toc-number">2.4.</span> <span class="toc-text">4,如果代码从版本仓库clone到本地的 第一次要先将本地代码同步到服务器 Tools-&gt;Deployment</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三-adminer-php-登录mysql数据库"><span class="toc-number">3.</span> <span class="toc-text">三,adminer.php 登录mysql数据库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-相比phpMyAdmin-adminer-php更方便就一个文件-到https-www-adminer-org-去下载"><span class="toc-number">3.1.</span> <span class="toc-text">1,相比phpMyAdmin, adminer.php更方便就一个文件,到https://www.adminer.org/ 去下载</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-上面也看到了放在webroot-目录下面可以直接访问-下载之后去掉版本号之后为adminer-php-放到webroot下"><span class="toc-number">3.2.</span> <span class="toc-text">2,上面也看到了放在webroot 目录下面可以直接访问,下载之后去掉版本号之后为adminer.php 放到webroot下</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
