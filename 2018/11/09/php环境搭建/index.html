@@ -5,24 +5,24 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="dns-prefetch" href="http://yoursite.com">
+  <link rel="dns-prefetch" href="https://zjh12580.github.io/blog">
   <title>Mac PHP环境搭建 | zhaojh&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="一, 用终端登录远程1, 下载私钥copy到~/.ssh目录 2, 在~/.ssh/config中添加配置123456Host your-custom-host-name  #自定义一个名字HostName xxx                #你的主机hostUser root                   #userPort 22ProxyCommand corkscrew xxx 3">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Mac PHP环境搭建">
-<meta property="og:url" content="http://yoursite.com/2018/11/09/php环境搭建/index.html">
+<meta property="og:url" content="https://zjh12580.github.io/blog/2018/11/09/php环境搭建/index.html">
 <meta property="og:site_name" content="zhaojh&#39;s blog">
 <meta property="og:description" content="一, 用终端登录远程1, 下载私钥copy到~/.ssh目录 2, 在~/.ssh/config中添加配置123456Host your-custom-host-name  #自定义一个名字HostName xxx                #你的主机hostUser root                   #userPort 22ProxyCommand corkscrew xxx 3">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://yoursite.com/assets/phpstorm-config-1.png">
-<meta property="og:image" content="http://yoursite.com/assets/phpstorm-config-2.png">
-<meta property="og:image" content="http://yoursite.com/assets/phpstorm-config-3.png">
-<meta property="og:updated_time" content="2018-12-06T11:02:29.439Z">
+<meta property="og:image" content="https://zjh12580.github.io/img/phpstorm-config-1.png">
+<meta property="og:image" content="https://zjh12580.github.io/img/phpstorm-config-2.png">
+<meta property="og:image" content="https://zjh12580.github.io/img/phpstorm-config-3.png">
+<meta property="og:updated_time" content="2018-12-06T11:36:52.654Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac PHP环境搭建">
 <meta name="twitter:description" content="一, 用终端登录远程1, 下载私钥copy到~/.ssh目录 2, 在~/.ssh/config中添加配置123456Host your-custom-host-name  #自定义一个名字HostName xxx                #你的主机hostUser root                   #userPort 22ProxyCommand corkscrew xxx 3">
-<meta name="twitter:image" content="http://yoursite.com/assets/phpstorm-config-1.png">
+<meta name="twitter:image" content="https://zjh12580.github.io/img/phpstorm-config-1.png">
   
     <link rel="alternative" href="/atom.xml" title="zhaojh&#39;s blog" type="application/atom+xml">
   
@@ -180,13 +180,13 @@
 <h3 id="3-3-再次执行-ssh-your-custom-host-name-连接成功"><a href="#3-3-再次执行-ssh-your-custom-host-name-连接成功" class="headerlink" title="3.3 再次执行 ssh your-custom-host-name 连接成功"></a>3.3 再次执行 <code>ssh your-custom-host-name</code> 连接成功</h3><p><br></p>
 <h2 id="二-配置PHPStorm"><a href="#二-配置PHPStorm" class="headerlink" title="二, 配置PHPStorm"></a>二, 配置PHPStorm</h2><h3 id="1-选择-Tools-gt-Deployment-gt-Configuration-点击新增一个配置"><a href="#1-选择-Tools-gt-Deployment-gt-Configuration-点击新增一个配置" class="headerlink" title="1, 选择 Tools-&gt;Deployment-&gt;Configuration 点击新增一个配置"></a>1, 选择 <code>Tools-&gt;Deployment-&gt;Configuration</code> 点击新增一个配置</h3><p> <br></p>
 <p> Connection Tab</p>
-<p><div align="center"><img src="/assets/phpstorm-config-1.png" alt="Contaction Tab ">   </div></p>
+<p><div align="center"><img src="/img/phpstorm-config-1.png" alt="Contaction Tab ">   </div></p>
 <p>注意: 上面Root path 是映射到服务器上的地址, Port随便写一下, 下面会用命令映射</p>
 <p><br></p>
 <p> Mappings Tab</p>
-<p><div align="center"><img src="/assets/phpstorm-config-2.png" alt="Contaction Tab ">  </div></p>
+<p><div align="center"><img src="/img/phpstorm-config-2.png" alt="Contaction Tab ">  </div></p>
 <p><br></p>
-<h3 id="2-选择-Tools-gt-Deployment-gt-Options"><a href="#2-选择-Tools-gt-Deployment-gt-Options" class="headerlink" title="2, 选择 Tools-&gt;Deployment-&gt;Options"></a>2, 选择 <code>Tools-&gt;Deployment-&gt;Options</code></h3><p><div align="center"><img src="/assets/phpstorm-config-3.png" alt="Contaction Tab ">  </div></p>
+<h3 id="2-选择-Tools-gt-Deployment-gt-Options"><a href="#2-选择-Tools-gt-Deployment-gt-Options" class="headerlink" title="2, 选择 Tools-&gt;Deployment-&gt;Options"></a>2, 选择 <code>Tools-&gt;Deployment-&gt;Options</code></h3><p><div align="center"><img src="/img/phpstorm-config-3.png" alt="Contaction Tab ">  </div></p>
 <p><br></p>
 <h3 id="3-执行ssh-L-端口-127-0-0-1-22-your-custom-host-name-fN-your-custom-host-name-是上面自定义host名字"><a href="#3-执行ssh-L-端口-127-0-0-1-22-your-custom-host-name-fN-your-custom-host-name-是上面自定义host名字" class="headerlink" title="3,  执行ssh -L 端口:127.0.0.1:22  your-custom-host-name  -fN  #your-custom-host-name 是上面自定义host名字"></a>3,  执行<code>ssh -L 端口:127.0.0.1:22  your-custom-host-name  -fN</code>  #your-custom-host-name 是上面自定义host名字</h3><p>成功之后, 改动php文件 然后 <code>command+s</code> 保存就会自动上传到服务器</p>
 <p><br></p>
@@ -291,7 +291,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/11/09/php环境搭建/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://zjh12580.github.io/blog/2018/11/09/php环境搭建/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -307,7 +307,7 @@
   
   
     <a href="/2018/11/09/成长日记/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">我的成长日记</div>
+      <div class="article-nav-title">iOS 随笔</div>
       <i class="icon-circle-right"></i>
     </a>
   

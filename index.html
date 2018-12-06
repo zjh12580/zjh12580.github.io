@@ -5,13 +5,13 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="dns-prefetch" href="http://yoursite.com">
+  <link rel="dns-prefetch" href="https://zjh12580.github.io/blog">
   <title>zhaojh&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="喧闹中保持一份宁静，在繁华中保持一份自我!">
 <meta property="og:type" content="website">
 <meta property="og:title" content="zhaojh&#39;s blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="https://zjh12580.github.io/blog/index.html">
 <meta property="og:site_name" content="zhaojh&#39;s blog">
 <meta property="og:description" content="喧闹中保持一份宁静，在繁华中保持一份自我!">
 <meta property="og:locale" content="default">
@@ -177,13 +177,13 @@
 <h3 id="3-3-再次执行-ssh-your-custom-host-name-连接成功"><a href="#3-3-再次执行-ssh-your-custom-host-name-连接成功" class="headerlink" title="3.3 再次执行 ssh your-custom-host-name 连接成功"></a>3.3 再次执行 <code>ssh your-custom-host-name</code> 连接成功</h3><p><br></p>
 <h2 id="二-配置PHPStorm"><a href="#二-配置PHPStorm" class="headerlink" title="二, 配置PHPStorm"></a>二, 配置PHPStorm</h2><h3 id="1-选择-Tools-gt-Deployment-gt-Configuration-点击新增一个配置"><a href="#1-选择-Tools-gt-Deployment-gt-Configuration-点击新增一个配置" class="headerlink" title="1, 选择 Tools-&gt;Deployment-&gt;Configuration 点击新增一个配置"></a>1, 选择 <code>Tools-&gt;Deployment-&gt;Configuration</code> 点击新增一个配置</h3><p> <br></p>
 <p> Connection Tab</p>
-<p><div align="center"><img src="/assets/phpstorm-config-1.png" alt="Contaction Tab ">   </div></p>
+<p><div align="center"><img src="/img/phpstorm-config-1.png" alt="Contaction Tab ">   </div></p>
 <p>注意: 上面Root path 是映射到服务器上的地址, Port随便写一下, 下面会用命令映射</p>
 <p><br></p>
 <p> Mappings Tab</p>
-<p><div align="center"><img src="/assets/phpstorm-config-2.png" alt="Contaction Tab ">  </div></p>
+<p><div align="center"><img src="/img/phpstorm-config-2.png" alt="Contaction Tab ">  </div></p>
 <p><br></p>
-<h3 id="2-选择-Tools-gt-Deployment-gt-Options"><a href="#2-选择-Tools-gt-Deployment-gt-Options" class="headerlink" title="2, 选择 Tools-&gt;Deployment-&gt;Options"></a>2, 选择 <code>Tools-&gt;Deployment-&gt;Options</code></h3><p><div align="center"><img src="/assets/phpstorm-config-3.png" alt="Contaction Tab ">  </div></p>
+<h3 id="2-选择-Tools-gt-Deployment-gt-Options"><a href="#2-选择-Tools-gt-Deployment-gt-Options" class="headerlink" title="2, 选择 Tools-&gt;Deployment-&gt;Options"></a>2, 选择 <code>Tools-&gt;Deployment-&gt;Options</code></h3><p><div align="center"><img src="/img/phpstorm-config-3.png" alt="Contaction Tab ">  </div></p>
 <p><br></p>
 <h3 id="3-执行ssh-L-端口-127-0-0-1-22-your-custom-host-name-fN-your-custom-host-name-是上面自定义host名字"><a href="#3-执行ssh-L-端口-127-0-0-1-22-your-custom-host-name-fN-your-custom-host-name-是上面自定义host名字" class="headerlink" title="3,  执行ssh -L 端口:127.0.0.1:22  your-custom-host-name  -fN  #your-custom-host-name 是上面自定义host名字"></a>3,  执行<code>ssh -L 端口:127.0.0.1:22  your-custom-host-name  -fN</code>  #your-custom-host-name 是上面自定义host名字</h3><p>成功之后, 改动php文件 然后 <code>command+s</code> 保存就会自动上传到服务器</p>
 <p><br></p>
@@ -253,7 +253,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/11/09/成长日记/">我的成长日记</a>
+      <a class="article-title" href="/2018/11/09/成长日记/">iOS 随笔</a>
     </h1>
   
 
@@ -272,7 +272,8 @@
 <h4 id="私有库制作"><a href="#私有库制作" class="headerlink" title="私有库制作:"></a>私有库制作:</h4>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">   1. 本地仓库路径------&gt; cd ~/.cocoapods/repos</span><br><span class="line">   2. 添加远程索引库----&gt; pod repo add  xxx  git.xxx.git</span><br><span class="line">   3. 创建库模板demo---&gt; pod lib create  xxx</span><br></pre></td></tr></table></figure>
 <p>   //找不到库?<br>   rm ~/Library/Caches/CocoaPods/search_index.json</p>
 <p>   pod update –no-repo-update 更新</p>
-<p>   <strong><em> 3, 静态库没法使用 use_frameworks! 标记 </em></strong><br>   pod报错: target has transitive dependencies that include static binaries</p>
+<pre><code>### 3, 静态库没法使用 use_frameworks! 标记 ***
+</code></pre><p>   pod报错: target has transitive dependencies that include static binaries</p>
 <p>   参考:<a href="https://www.jianshu.com/p/7f6a7e1b3235" target="_blank" rel="noopener">https://www.jianshu.com/p/7f6a7e1b3235</a></p>
 
       
