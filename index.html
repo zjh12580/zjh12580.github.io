@@ -46,7 +46,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/blog/" class="profilepic">
-			<img src="/assets/header_icon.jpg" class="js-avatar">
+			<img src="/img/header_icon.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/blog/">zhaojh</a></h1>
@@ -98,7 +98,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="/assets/header_icon.jpg" class="js-avatar">
+				<img src="/img/header_icon.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">zhaojh</h1>
@@ -147,43 +147,39 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-php环境搭建" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
+    <article id="post-PHP-环境搭建" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/11/09/php环境搭建/">Mac PHP环境搭建</a>
+      <a class="article-title" href="/2018/12/07/PHP-环境搭建/">Mac PHP环境搭建</a>
     </h1>
   
 
         
-        <a href="/2018/11/09/php环境搭建/" class="archive-article-date">
-  	<time datetime="2018-11-09T06:10:28.188Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-09</time>
+        <a href="/2018/12/07/PHP-环境搭建/" class="archive-article-date">
+  	<time datetime="2018-12-07T02:33:29.587Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-07</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="一-用终端登录远程"><a href="#一-用终端登录远程" class="headerlink" title="一, 用终端登录远程"></a>一, 用终端登录远程</h2><h3 id="1-下载私钥copy到-ssh目录"><a href="#1-下载私钥copy到-ssh目录" class="headerlink" title="1, 下载私钥copy到~/.ssh目录"></a>1, 下载私钥copy到<code>~/.ssh</code>目录</h3><p><br></p>
-<h3 id="2-在-ssh-config中添加配置"><a href="#2-在-ssh-config中添加配置" class="headerlink" title="2, 在~/.ssh/config中添加配置"></a>2, 在<code>~/.ssh/config</code>中添加配置</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Host your-custom-host-name  #自定义一个名字</span><br><span class="line">HostName xxx                #你的主机host</span><br><span class="line">User root                   #user</span><br><span class="line">Port 22</span><br><span class="line">ProxyCommand corkscrew xxx 30080 %h %p  # xxx是你的domain 30080是你的端口 **注意替换**</span><br><span class="line">IdentityFile ~/.ssh/xxx                 # 私钥路径</span><br></pre></td></tr></table></figure>
+        <h2 id="一-用终端登录远程"><a href="#一-用终端登录远程" class="headerlink" title="一, 用终端登录远程"></a>一, 用终端登录远程</h2><h3 id="1-下载私钥copy到-ssh目录"><a href="#1-下载私钥copy到-ssh目录" class="headerlink" title="1, 下载私钥copy到~/.ssh目录"></a>1, 下载私钥copy到<code>~/.ssh</code>目录</h3><h3 id="2-在-ssh-config中添加配置"><a href="#2-在-ssh-config中添加配置" class="headerlink" title="2, 在~/.ssh/config中添加配置"></a>2, 在<code>~/.ssh/config</code>中添加配置</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Host your-custom-host-name  #自定义一个名字</span><br><span class="line">HostName xxx                #你的主机host</span><br><span class="line">User root                   #user</span><br><span class="line">Port 22</span><br><span class="line">ProxyCommand corkscrew xxx 30080 %h %p  # xxx是你的domain 30080是你的端口 **注意替换**</span><br><span class="line">IdentityFile ~/.ssh/xxx                 # 私钥路径</span><br></pre></td></tr></table></figure>
 <p><br></p>
-<h3 id="3-连接远程主机-ssh-your-custom-host-name"><a href="#3-连接远程主机-ssh-your-custom-host-name" class="headerlink" title="3, 连接远程主机  ssh your-custom-host-name"></a>3, 连接远程主机  <code>ssh your-custom-host-name</code></h3><p><br></p>
-<p>3.1 注意 步骤2用到了 <code>corkscrew</code> 如果没有安装 先安装一下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">安装corkscrew</span><br><span class="line">sudo apt-get install corkscrew</span><br></pre></td></tr></table></figure></p>
+<h3 id="3-连接远程主机-ssh-your-custom-host-name"><a href="#3-连接远程主机-ssh-your-custom-host-name" class="headerlink" title="3, 连接远程主机  ssh your-custom-host-name"></a>3, 连接远程主机  <code>ssh your-custom-host-name</code></h3><p>3.1 注意 步骤2用到了 <code>corkscrew</code> 如果没有安装 先安装一下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">安装corkscrew</span><br><span class="line">sudo apt-get install corkscrew</span><br></pre></td></tr></table></figure></p>
 <p><a href="https://blog.csdn.net/luofengmacheng/article/details/35550889" target="_blank" rel="noopener">安装教程参考这里</a></p>
 <p>3.2 提示没权限,需要你输入密码? 如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Load key &quot;/Users/zhaojh/.ssh/xxx.ssh-rsa&quot;: bad permissions</span><br><span class="line">root@xxxxxx&apos;s password:</span><br><span class="line"></span><br><span class="line">---解决: 给私钥加一下权限</span><br><span class="line">cd ~/.ssh</span><br><span class="line">ls -l</span><br><span class="line">然后chmod命令给你的私钥加上rw权限,最终效果是: -rw------- .</span><br></pre></td></tr></table></figure></p>
 <h3 id="3-3-再次执行-ssh-your-custom-host-name-连接成功"><a href="#3-3-再次执行-ssh-your-custom-host-name-连接成功" class="headerlink" title="3.3 再次执行 ssh your-custom-host-name 连接成功"></a>3.3 再次执行 <code>ssh your-custom-host-name</code> 连接成功</h3><p><br></p>
-<h2 id="二-配置PHPStorm"><a href="#二-配置PHPStorm" class="headerlink" title="二, 配置PHPStorm"></a>二, 配置PHPStorm</h2><h3 id="1-选择-Tools-gt-Deployment-gt-Configuration-点击新增一个配置"><a href="#1-选择-Tools-gt-Deployment-gt-Configuration-点击新增一个配置" class="headerlink" title="1, 选择 Tools-&gt;Deployment-&gt;Configuration 点击新增一个配置"></a>1, 选择 <code>Tools-&gt;Deployment-&gt;Configuration</code> 点击新增一个配置</h3><p> <br></p>
-<p> Connection Tab</p>
-<p><div align="center"><img src="/img/phpstorm-config-1.png" alt="Contaction Tab ">   </div></p>
+<h2 id="二-配置PHPStorm"><a href="#二-配置PHPStorm" class="headerlink" title="二, 配置PHPStorm"></a>二, 配置PHPStorm</h2><h3 id="1-选择-Tools-gt-Deployment-gt-Configuration-点击新增一个配置"><a href="#1-选择-Tools-gt-Deployment-gt-Configuration-点击新增一个配置" class="headerlink" title="1, 选择 Tools-&gt;Deployment-&gt;Configuration 点击新增一个配置"></a>1, 选择 <code>Tools-&gt;Deployment-&gt;Configuration</code> 点击新增一个配置</h3><p><br></p>
+<p>Connection Tab<br><img src="/img/phpstorm-config-1.png"></p>
 <p>注意: 上面Root path 是映射到服务器上的地址, Port随便写一下, 下面会用命令映射</p>
 <p><br></p>
-<p> Mappings Tab</p>
-<p><div align="center"><img src="/img/phpstorm-config-2.png" alt="Contaction Tab ">  </div></p>
+<p>Mappings Tab<br><img src="/img/phpstorm-config-2.png"></p>
 <p><br></p>
-<h3 id="2-选择-Tools-gt-Deployment-gt-Options"><a href="#2-选择-Tools-gt-Deployment-gt-Options" class="headerlink" title="2, 选择 Tools-&gt;Deployment-&gt;Options"></a>2, 选择 <code>Tools-&gt;Deployment-&gt;Options</code></h3><p><div align="center"><img src="/img/phpstorm-config-3.png" alt="Contaction Tab ">  </div></p>
+<h3 id="2-选择-Tools-gt-Deployment-gt-Options"><a href="#2-选择-Tools-gt-Deployment-gt-Options" class="headerlink" title="2, 选择 Tools-&gt;Deployment-&gt;Options"></a>2, 选择 <code>Tools-&gt;Deployment-&gt;Options</code></h3><p><img src="/img/phpstorm-config-3.png"> </p>
 <p><br></p>
 <h3 id="3-执行ssh-L-端口-127-0-0-1-22-your-custom-host-name-fN-your-custom-host-name-是上面自定义host名字"><a href="#3-执行ssh-L-端口-127-0-0-1-22-your-custom-host-name-fN-your-custom-host-name-是上面自定义host名字" class="headerlink" title="3,  执行ssh -L 端口:127.0.0.1:22  your-custom-host-name  -fN  #your-custom-host-name 是上面自定义host名字"></a>3,  执行<code>ssh -L 端口:127.0.0.1:22  your-custom-host-name  -fN</code>  #your-custom-host-name 是上面自定义host名字</h3><p>成功之后, 改动php文件 然后 <code>command+s</code> 保存就会自动上传到服务器</p>
 <p><br></p>
@@ -216,7 +212,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/11/09/php环境搭建/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/12/07/PHP-环境搭建/">展开全文 >></a>
         </p>
       
 
@@ -246,20 +242,20 @@
 
 
   
-    <article id="post-成长日记" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
+    <article id="post-iOS-随笔" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/11/09/成长日记/">iOS 随笔</a>
+      <a class="article-title" href="/2018/12/07/iOS-随笔/">iOS 随笔</a>
     </h1>
   
 
         
-        <a href="/2018/11/09/成长日记/" class="archive-article-date">
-  	<time datetime="2018-11-09T06:10:28.188Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-09</time>
+        <a href="/2018/12/07/iOS-随笔/" class="archive-article-date">
+  	<time datetime="2018-12-07T02:33:06.561Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-07</time>
 </a>
         
       </header>
@@ -273,9 +269,10 @@
 <p>   //找不到库?<br>   rm ~/Library/Caches/CocoaPods/search_index.json</p>
 <p>   pod update –no-repo-update 更新</p>
 <pre><code>### 3, 静态库没法使用 use_frameworks! 标记 ***
-</code></pre><p>   pod报错: target has transitive dependencies that include static binaries</p>
-<p>   参考:<a href="https://www.jianshu.com/p/7f6a7e1b3235" target="_blank" rel="noopener">https://www.jianshu.com/p/7f6a7e1b3235</a></p>
+   pod报错: target has transitive dependencies that include static binaries
 
+         参考:https://www.jianshu.com/p/7f6a7e1b3235
+</code></pre>
       
 
       
@@ -298,7 +295,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/11/09/成长日记/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/12/07/iOS-随笔/">展开全文 >></a>
         </p>
       
 

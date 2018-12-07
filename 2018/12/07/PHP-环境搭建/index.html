@@ -8,20 +8,20 @@
   <link rel="dns-prefetch" href="https://zjh12580.github.io/blog">
   <title>Mac PHP环境搭建 | zhaojh&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一, 用终端登录远程1, 下载私钥copy到~/.ssh目录 2, 在~/.ssh/config中添加配置123456Host your-custom-host-name  #自定义一个名字HostName xxx                #你的主机hostUser root                   #userPort 22ProxyCommand corkscrew xxx 3">
+  <meta name="description" content="一, 用终端登录远程1, 下载私钥copy到~/.ssh目录2, 在~/.ssh/config中添加配置123456Host your-custom-host-name  #自定义一个名字HostName xxx                #你的主机hostUser root                   #userPort 22ProxyCommand corkscrew xxx 30">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Mac PHP环境搭建">
-<meta property="og:url" content="https://zjh12580.github.io/blog/2018/11/09/php环境搭建/index.html">
+<meta property="og:url" content="https://zjh12580.github.io/blog/2018/12/07/PHP-环境搭建/index.html">
 <meta property="og:site_name" content="zhaojh&#39;s blog">
-<meta property="og:description" content="一, 用终端登录远程1, 下载私钥copy到~/.ssh目录 2, 在~/.ssh/config中添加配置123456Host your-custom-host-name  #自定义一个名字HostName xxx                #你的主机hostUser root                   #userPort 22ProxyCommand corkscrew xxx 3">
+<meta property="og:description" content="一, 用终端登录远程1, 下载私钥copy到~/.ssh目录2, 在~/.ssh/config中添加配置123456Host your-custom-host-name  #自定义一个名字HostName xxx                #你的主机hostUser root                   #userPort 22ProxyCommand corkscrew xxx 30">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://zjh12580.github.io/img/phpstorm-config-1.png">
 <meta property="og:image" content="https://zjh12580.github.io/img/phpstorm-config-2.png">
 <meta property="og:image" content="https://zjh12580.github.io/img/phpstorm-config-3.png">
-<meta property="og:updated_time" content="2018-12-06T11:36:52.654Z">
+<meta property="og:updated_time" content="2018-12-07T03:07:16.078Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac PHP环境搭建">
-<meta name="twitter:description" content="一, 用终端登录远程1, 下载私钥copy到~/.ssh目录 2, 在~/.ssh/config中添加配置123456Host your-custom-host-name  #自定义一个名字HostName xxx                #你的主机hostUser root                   #userPort 22ProxyCommand corkscrew xxx 3">
+<meta name="twitter:description" content="一, 用终端登录远程1, 下载私钥copy到~/.ssh目录2, 在~/.ssh/config中添加配置123456Host your-custom-host-name  #自定义一个名字HostName xxx                #你的主机hostUser root                   #userPort 22ProxyCommand corkscrew xxx 30">
 <meta name="twitter:image" content="https://zjh12580.github.io/img/phpstorm-config-1.png">
   
     <link rel="alternative" href="/atom.xml" title="zhaojh&#39;s blog" type="application/atom+xml">
@@ -51,7 +51,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/blog/" class="profilepic">
-			<img src="/assets/header_icon.jpg" class="js-avatar">
+			<img src="/img/header_icon.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/blog/">zhaojh</a></h1>
@@ -103,7 +103,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="/assets/header_icon.jpg" class="js-avatar">
+				<img src="/img/header_icon.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">zhaojh</h1>
@@ -150,7 +150,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-php环境搭建" class="article article-type-post " itemscope="" itemprop="blogPost">
+            <article id="post-PHP-环境搭建" class="article article-type-post " itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -162,31 +162,27 @@
   
 
         
-        <a href="/2018/11/09/php环境搭建/" class="archive-article-date">
-  	<time datetime="2018-11-09T06:10:28.188Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-09</time>
+        <a href="/2018/12/07/PHP-环境搭建/" class="archive-article-date">
+  	<time datetime="2018-12-07T02:33:29.587Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-07</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="一-用终端登录远程"><a href="#一-用终端登录远程" class="headerlink" title="一, 用终端登录远程"></a>一, 用终端登录远程</h2><h3 id="1-下载私钥copy到-ssh目录"><a href="#1-下载私钥copy到-ssh目录" class="headerlink" title="1, 下载私钥copy到~/.ssh目录"></a>1, 下载私钥copy到<code>~/.ssh</code>目录</h3><p><br></p>
-<h3 id="2-在-ssh-config中添加配置"><a href="#2-在-ssh-config中添加配置" class="headerlink" title="2, 在~/.ssh/config中添加配置"></a>2, 在<code>~/.ssh/config</code>中添加配置</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Host your-custom-host-name  #自定义一个名字</span><br><span class="line">HostName xxx                #你的主机host</span><br><span class="line">User root                   #user</span><br><span class="line">Port 22</span><br><span class="line">ProxyCommand corkscrew xxx 30080 %h %p  # xxx是你的domain 30080是你的端口 **注意替换**</span><br><span class="line">IdentityFile ~/.ssh/xxx                 # 私钥路径</span><br></pre></td></tr></table></figure>
+        <h2 id="一-用终端登录远程"><a href="#一-用终端登录远程" class="headerlink" title="一, 用终端登录远程"></a>一, 用终端登录远程</h2><h3 id="1-下载私钥copy到-ssh目录"><a href="#1-下载私钥copy到-ssh目录" class="headerlink" title="1, 下载私钥copy到~/.ssh目录"></a>1, 下载私钥copy到<code>~/.ssh</code>目录</h3><h3 id="2-在-ssh-config中添加配置"><a href="#2-在-ssh-config中添加配置" class="headerlink" title="2, 在~/.ssh/config中添加配置"></a>2, 在<code>~/.ssh/config</code>中添加配置</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Host your-custom-host-name  #自定义一个名字</span><br><span class="line">HostName xxx                #你的主机host</span><br><span class="line">User root                   #user</span><br><span class="line">Port 22</span><br><span class="line">ProxyCommand corkscrew xxx 30080 %h %p  # xxx是你的domain 30080是你的端口 **注意替换**</span><br><span class="line">IdentityFile ~/.ssh/xxx                 # 私钥路径</span><br></pre></td></tr></table></figure>
 <p><br></p>
-<h3 id="3-连接远程主机-ssh-your-custom-host-name"><a href="#3-连接远程主机-ssh-your-custom-host-name" class="headerlink" title="3, 连接远程主机  ssh your-custom-host-name"></a>3, 连接远程主机  <code>ssh your-custom-host-name</code></h3><p><br></p>
-<p>3.1 注意 步骤2用到了 <code>corkscrew</code> 如果没有安装 先安装一下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">安装corkscrew</span><br><span class="line">sudo apt-get install corkscrew</span><br></pre></td></tr></table></figure></p>
+<h3 id="3-连接远程主机-ssh-your-custom-host-name"><a href="#3-连接远程主机-ssh-your-custom-host-name" class="headerlink" title="3, 连接远程主机  ssh your-custom-host-name"></a>3, 连接远程主机  <code>ssh your-custom-host-name</code></h3><p>3.1 注意 步骤2用到了 <code>corkscrew</code> 如果没有安装 先安装一下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">安装corkscrew</span><br><span class="line">sudo apt-get install corkscrew</span><br></pre></td></tr></table></figure></p>
 <p><a href="https://blog.csdn.net/luofengmacheng/article/details/35550889" target="_blank" rel="noopener">安装教程参考这里</a></p>
 <p>3.2 提示没权限,需要你输入密码? 如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Load key &quot;/Users/zhaojh/.ssh/xxx.ssh-rsa&quot;: bad permissions</span><br><span class="line">root@xxxxxx&apos;s password:</span><br><span class="line"></span><br><span class="line">---解决: 给私钥加一下权限</span><br><span class="line">cd ~/.ssh</span><br><span class="line">ls -l</span><br><span class="line">然后chmod命令给你的私钥加上rw权限,最终效果是: -rw------- .</span><br></pre></td></tr></table></figure></p>
 <h3 id="3-3-再次执行-ssh-your-custom-host-name-连接成功"><a href="#3-3-再次执行-ssh-your-custom-host-name-连接成功" class="headerlink" title="3.3 再次执行 ssh your-custom-host-name 连接成功"></a>3.3 再次执行 <code>ssh your-custom-host-name</code> 连接成功</h3><p><br></p>
-<h2 id="二-配置PHPStorm"><a href="#二-配置PHPStorm" class="headerlink" title="二, 配置PHPStorm"></a>二, 配置PHPStorm</h2><h3 id="1-选择-Tools-gt-Deployment-gt-Configuration-点击新增一个配置"><a href="#1-选择-Tools-gt-Deployment-gt-Configuration-点击新增一个配置" class="headerlink" title="1, 选择 Tools-&gt;Deployment-&gt;Configuration 点击新增一个配置"></a>1, 选择 <code>Tools-&gt;Deployment-&gt;Configuration</code> 点击新增一个配置</h3><p> <br></p>
-<p> Connection Tab</p>
-<p><div align="center"><img src="/img/phpstorm-config-1.png" alt="Contaction Tab ">   </div></p>
+<h2 id="二-配置PHPStorm"><a href="#二-配置PHPStorm" class="headerlink" title="二, 配置PHPStorm"></a>二, 配置PHPStorm</h2><h3 id="1-选择-Tools-gt-Deployment-gt-Configuration-点击新增一个配置"><a href="#1-选择-Tools-gt-Deployment-gt-Configuration-点击新增一个配置" class="headerlink" title="1, 选择 Tools-&gt;Deployment-&gt;Configuration 点击新增一个配置"></a>1, 选择 <code>Tools-&gt;Deployment-&gt;Configuration</code> 点击新增一个配置</h3><p><br></p>
+<p>Connection Tab<br><img src="/img/phpstorm-config-1.png"></p>
 <p>注意: 上面Root path 是映射到服务器上的地址, Port随便写一下, 下面会用命令映射</p>
 <p><br></p>
-<p> Mappings Tab</p>
-<p><div align="center"><img src="/img/phpstorm-config-2.png" alt="Contaction Tab ">  </div></p>
+<p>Mappings Tab<br><img src="/img/phpstorm-config-2.png"></p>
 <p><br></p>
-<h3 id="2-选择-Tools-gt-Deployment-gt-Options"><a href="#2-选择-Tools-gt-Deployment-gt-Options" class="headerlink" title="2, 选择 Tools-&gt;Deployment-&gt;Options"></a>2, 选择 <code>Tools-&gt;Deployment-&gt;Options</code></h3><p><div align="center"><img src="/img/phpstorm-config-3.png" alt="Contaction Tab ">  </div></p>
+<h3 id="2-选择-Tools-gt-Deployment-gt-Options"><a href="#2-选择-Tools-gt-Deployment-gt-Options" class="headerlink" title="2, 选择 Tools-&gt;Deployment-&gt;Options"></a>2, 选择 <code>Tools-&gt;Deployment-&gt;Options</code></h3><p><img src="/img/phpstorm-config-3.png"> </p>
 <p><br></p>
 <h3 id="3-执行ssh-L-端口-127-0-0-1-22-your-custom-host-name-fN-your-custom-host-name-是上面自定义host名字"><a href="#3-执行ssh-L-端口-127-0-0-1-22-your-custom-host-name-fN-your-custom-host-name-是上面自定义host名字" class="headerlink" title="3,  执行ssh -L 端口:127.0.0.1:22  your-custom-host-name  -fN  #your-custom-host-name 是上面自定义host名字"></a>3,  执行<code>ssh -L 端口:127.0.0.1:22  your-custom-host-name  -fN</code>  #your-custom-host-name 是上面自定义host名字</h3><p>成功之后, 改动php文件 然后 <code>command+s</code> 保存就会自动上传到服务器</p>
 <p><br></p>
@@ -291,7 +287,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://zjh12580.github.io/blog/2018/11/09/php环境搭建/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://zjh12580.github.io/blog/2018/12/07/PHP-环境搭建/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -306,7 +302,7 @@
 <nav id="article-nav">
   
   
-    <a href="/2018/11/09/成长日记/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2018/12/07/iOS-随笔/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">iOS 随笔</div>
       <i class="icon-circle-right"></i>
     </a>
