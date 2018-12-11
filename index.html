@@ -178,7 +178,7 @@
 <h3 id="4-如果代码从版本仓库clone到本地的-第一次要先将本地代码同步到服务器-Tools-gt-Deployment"><a href="#4-如果代码从版本仓库clone到本地的-第一次要先将本地代码同步到服务器-Tools-gt-Deployment" class="headerlink" title="4,如果代码从版本仓库clone到本地的 第一次要先将本地代码同步到服务器 Tools-&gt;Deployment"></a>4,如果代码从版本仓库clone到本地的 第一次要先将本地代码同步到服务器 <code>Tools-&gt;Deployment</code></h3><p>最后在webroot下新建一个index.php文件 写上一句 <code>echo &#39;Helloworld!&#39;;</code> 然后浏览器访问 http://{domain}/index.php 如果看到  <code>Helloworld!</code> 恭喜成功了!</p>
 <p><br></p>
 <h2 id="三-adminer-php-登录mysql数据库"><a href="#三-adminer-php-登录mysql数据库" class="headerlink" title="三,adminer.php 登录mysql数据库"></a>三,adminer.php 登录mysql数据库</h2><p><br></p>
-<h3 id="1-相比phpMyAdmin-adminer-php更方便就一个文件-到https-www-adminer-org-去下载"><a href="#1-相比phpMyAdmin-adminer-php更方便就一个文件-到https-www-adminer-org-去下载" class="headerlink" title="1,相比phpMyAdmin, adminer.php更方便就一个文件,到https://www.adminer.org/ 去下载"></a>1,相比<code>phpMyAdmin</code>, <code>adminer.php</code>更方便就一个文件,到<code>https://www.adminer.org/</code> 去下载</h3><h3 id="2-上面也看到了放在webroot-目录下面可以直接访问-下载之后去掉版本号之后为adminer-php-放到webroot下"><a href="#2-上面也看到了放在webroot-目录下面可以直接访问-下载之后去掉版本号之后为adminer-php-放到webroot下" class="headerlink" title="2,上面也看到了放在webroot 目录下面可以直接访问,下载之后去掉版本号之后为adminer.php 放到webroot下"></a>2,上面也看到了放在webroot 目录下面可以直接访问,下载之后去掉版本号之后为<code>adminer.php</code> 放到webroot下</h3><p>然后浏览器访问 http://{domain}/adminer.php 就会有数据库登录界面</p>
+<h3 id="1-相比phpMyAdmin-adminer-php更方便就一个文件-到https-www-adminer-org-去下载"><a href="#1-相比phpMyAdmin-adminer-php更方便就一个文件-到https-www-adminer-org-去下载" class="headerlink" title="1,相比phpMyAdmin, adminer.php更方便就一个文件,到https://www.adminer.org/ 去下载"></a>1,相比<code>phpMyAdmin</code>, <code>adminer.php</code>更方便就一个文件,到<code>https://www.adminer.org/</code> 去下载</h3><h3 id="2-下载之后去掉版本号之后为adminer-php-放到webroot下"><a href="#2-下载之后去掉版本号之后为adminer-php-放到webroot下" class="headerlink" title="2,下载之后去掉版本号之后为adminer.php 放到webroot下"></a>2,下载之后去掉版本号之后为<code>adminer.php</code> 放到webroot下</h3><p>然后浏览器访问 http://{domain}/adminer.php 就会有数据库登录界面</p>
 <p><br></p>
 <p>步骤一连接服务器之后 执行<code>env | grep mysql</code>  会返回你mysql的登录信息</p>
 
@@ -205,6 +205,96 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2018/11/28/PHP-环境搭建/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Charls抓包配置" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/11/20/Charls抓包配置/">Charls抓包HTTPS配置</a>
+    </h1>
+  
+
+        
+        <a href="/2018/11/20/Charls抓包配置/" class="archive-article-date">
+  	<time datetime="2018-11-19T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-20</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h2><p>我建议支持正版—-请下载正版v4.2系列版本的charles.<br>然后注册一下…<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">https://zhile.io License </span><br><span class="line">Key: 48891cf209c6d32bf4</span><br></pre></td></tr></table></figure></p>
+<p><img src="/img/charles-about.png"></p>
+<h2 id="安装并信任证书"><a href="#安装并信任证书" class="headerlink" title="安装并信任证书"></a>安装并信任证书</h2><h3 id="电脑上安装证书-选择Help-gt-SSL-Proxying-gt-Install-Charles-Root-Certificate"><a href="#电脑上安装证书-选择Help-gt-SSL-Proxying-gt-Install-Charles-Root-Certificate" class="headerlink" title="电脑上安装证书,选择Help-&gt;SSL Proxying-&gt; Install Charles Root Certificate"></a>电脑上安装证书,选择<code>Help-&gt;SSL Proxying-&gt; Install Charles Root Certificate</code></h3><p>安装之后信任证书, <code>右键-&gt;显示简介-&gt;信任</code></p>
+<p><img src="/img/charles-trustcer.png"></p>
+<h3 id="手机上的证书-选择Help-gt-SSL-Proxying-gt-Install-Charles-Root-Certificate-On-Mobile-Device"><a href="#手机上的证书-选择Help-gt-SSL-Proxying-gt-Install-Charles-Root-Certificate-On-Mobile-Device" class="headerlink" title="手机上的证书,选择Help-&gt;SSL Proxying-&gt; Install Charles Root Certificate  On Mobile Device"></a>手机上的证书,选择<code>Help-&gt;SSL Proxying-&gt; Install Charles Root Certificate  On Mobile Device</code></h3><p>弹出提示<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Configure your device to use Charles as its HTTP proxy on 192.168.1.1:8686, then browse to</span><br><span class="line">chls. pro/ssl to download and install the certificate.</span><br><span class="line"></span><br><span class="line">先在手机上设置一下代理, 然后去chls.pro/ssl下载安装证书</span><br></pre></td></tr></table></figure></p>
+<p>端口号和Proxy Settings里设置的端口号一致</p>
+<p><img src="/img/charles-delegate.png"></p>
+<p>然后取手机Safari浏览器访问 <code>https://chls.pro/ssl</code> 安装证书<br>如果设置完代理连不上网是因为你启用了<code>White List</code> 选择<code>Tools-&gt;White List</code> 前面的√去掉</p>
+<blockquote>
+<ul>
+<li>注意: 一定不要忘了在 <code>关于手机 -&gt; 证书信任设置 -&gt; Charles Proxy certificate</code> 启用证书</li>
+<li>注意: 一定不要忘了在 <code>关于手机 -&gt; 证书信任设置 -&gt; Charles Proxy certificate</code> 启用证书</li>
+<li>注意: 一定不要忘了在 <code>关于手机 -&gt; 证书信任设置 -&gt; Charles Proxy certificate</code> 启用证书</li>
+</ul>
+</blockquote>
+<h3 id="设置https域名端口号"><a href="#设置https域名端口号" class="headerlink" title="设置https域名端口号"></a>设置https域名端口号</h3><p><img src="/img/charles-sslSettings.png"></p>
+<h3 id="ok-请求一下京东app"><a href="#ok-请求一下京东app" class="headerlink" title="ok 请求一下京东app"></a>ok 请求一下京东app</h3><p><img src="/img/charles-zhuajd.png"></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Charls</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/11/20/Charls抓包配置/">展开全文 >></a>
         </p>
       
 
@@ -487,11 +577,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
+                <a href="javascript:void(0)" class="js-tag color4">PHP</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">PHP</a>
+                <a href="javascript:void(0)" class="js-tag color2">Charls</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
               </li>
             
             <div class="clearfix"></div>
