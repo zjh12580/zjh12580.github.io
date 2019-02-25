@@ -19,7 +19,7 @@
 <meta property="og:image" content="https://zjh12580.github.io/img/phpstorm-config-1.png">
 <meta property="og:image" content="https://zjh12580.github.io/img/phpstorm-config-2.png">
 <meta property="og:image" content="https://zjh12580.github.io/img/phpstorm-config-3.png">
-<meta property="og:updated_time" content="2018-12-10T01:36:52.000Z">
+<meta property="og:updated_time" content="2019-02-25T08:17:09.179Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac PHP环境搭建">
 <meta name="twitter:description" content="一, 用终端登录远程1, 下载私钥放在~/.ssh目录2, 在~/.ssh/config中添加配置123456Host your-custom-host-name  #自定义一个名字HostName xxx                #你的主机hostUser root                   #userPort 22ProxyCommand corkscrew xxx 30080">
@@ -168,8 +168,7 @@
         <h2 id="一-用终端登录远程"><a href="#一-用终端登录远程" class="headerlink" title="一, 用终端登录远程"></a>一, 用终端登录远程</h2><h3 id="1-下载私钥放在-ssh目录"><a href="#1-下载私钥放在-ssh目录" class="headerlink" title="1, 下载私钥放在~/.ssh目录"></a>1, 下载私钥放在<code>~/.ssh</code>目录</h3><h3 id="2-在-ssh-config中添加配置"><a href="#2-在-ssh-config中添加配置" class="headerlink" title="2, 在~/.ssh/config中添加配置"></a>2, 在<code>~/.ssh/config</code>中添加配置</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Host your-custom-host-name  #自定义一个名字</span><br><span class="line">HostName xxx                #你的主机host</span><br><span class="line">User root                   #user</span><br><span class="line">Port 22</span><br><span class="line">ProxyCommand corkscrew xxx 30080 %h %p  # xxx是你的domain 30080是你的端口 **注意替换**</span><br><span class="line">IdentityFile ~/.ssh/xxx                 # 私钥路径</span><br></pre></td></tr></table></figure>
 <p><br></p>
 <h3 id="3-连接远程主机-ssh-your-custom-host-name"><a href="#3-连接远程主机-ssh-your-custom-host-name" class="headerlink" title="3, 连接远程主机  ssh your-custom-host-name"></a>3, 连接远程主机  <code>ssh your-custom-host-name</code></h3><p>3.1 注意 步骤2用到了 <code>corkscrew</code> 如果没有安装 先安装一下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">安装corkscrew</span><br><span class="line">sudo apt-get install corkscrew</span><br></pre></td></tr></table></figure></p>
-<p><a href="https://blog.csdn.net/luofengmacheng/article/details/35550889" target="_blank" rel="noopener">安装教程参考这里</a></p>
-<p>3.2 提示没权限,需要你输入密码? 如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Load key &quot;/Users/zhaojh/.ssh/xxx.ssh-rsa&quot;: bad permissions</span><br><span class="line">root@xxxxxx&apos;s password:</span><br><span class="line"></span><br><span class="line">---解决: 给私钥加一下权限</span><br><span class="line">cd ~/.ssh</span><br><span class="line">ls -l</span><br><span class="line">然后chmod命令给你的私钥加上rw权限,最终效果是: -rw------- .</span><br></pre></td></tr></table></figure></p>
+<p><a href="https://blog.csdn.net/luofengmacheng/article/details/35550889" target="_blank" rel="noopener">安装教程参考这里</a><br>~~<a id="more"></a><br>3.2 提示没权限,需要你输入密码? 如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Load key &quot;/Users/zhaojh/.ssh/xxx.ssh-rsa&quot;: bad permissions</span><br><span class="line">root@xxxxxx&apos;s password:</span><br><span class="line"></span><br><span class="line">---解决: 给私钥加一下权限</span><br><span class="line">cd ~/.ssh</span><br><span class="line">ls -l</span><br><span class="line">然后chmod命令给你的私钥加上rw权限,最终效果是: -rw------- .</span><br></pre></td></tr></table></figure></p>
 <h3 id="3-3-再次执行-ssh-your-custom-host-name-连接成功"><a href="#3-3-再次执行-ssh-your-custom-host-name-连接成功" class="headerlink" title="3.3 再次执行 ssh your-custom-host-name 连接成功"></a>3.3 再次执行 <code>ssh your-custom-host-name</code> 连接成功</h3><p><br></p>
 <h2 id="二-配置PHPStorm"><a href="#二-配置PHPStorm" class="headerlink" title="二, 配置PHPStorm"></a>二, 配置PHPStorm</h2><h3 id="1-选择-Tools-gt-Deployment-gt-Configuration-点击新增一个配置"><a href="#1-选择-Tools-gt-Deployment-gt-Configuration-点击新增一个配置" class="headerlink" title="1, 选择 Tools-&gt;Deployment-&gt;Configuration 点击新增一个配置"></a>1, 选择 <code>Tools-&gt;Deployment-&gt;Configuration</code> 点击新增一个配置</h3><p>Connection Tab<br><img src="/img/phpstorm-config-1.png"></p>
 <p>注意: 上面Root path 是映射到服务器上的地址, Port随便写一下, 下面会用命令映射</p>
@@ -410,11 +409,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Charls</a>
+                <a href="javascript:void(0)" class="js-tag color4">PHP</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">PHP</a>
+                <a href="javascript:void(0)" class="js-tag color2">Charls</a>
               </li>
              
               <li class="article-tag-list-item">
