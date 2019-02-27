@@ -21,7 +21,7 @@
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1945365-d7163b6244bc181f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1945365-4418f35919f7cbe2.gif?imageMogr2/auto-orient/strip">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1945365-fad65dc7a5f5ce34.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2019-02-27T03:47:55.406Z">
+<meta property="og:updated_time" content="2019-02-27T04:44:15.463Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS CoreGraphics 学习与使用">
 <meta name="twitter:description" content="iOS中绘制方法比较多, CoreGraphics ,UIKit 框架中都有一些方法. CoreGraphics中主要分三种,1,UIGraphicsGetCurrentContext()函数开头的绘制.2,UIGraphicsBeginImageContextWithOptions()函数开头的绘制, 3,CGPathCreateMutable()函数开头的绘制,  其中,UIGraphicsG">
@@ -171,8 +171,7 @@
 <p>CoreGraphics中主要分三种,1,UIGraphicsGetCurrentContext()函数开头的绘制.2,UIGraphicsBeginImageContextWithOptions()函数开头的绘制, 3,CGPathCreateMutable()函数开头的绘制,  其中,UIGraphicsGetCurrentContext()函数需在view 的 drawInRect方法中调用.</p>
 <p>UIKit中主要是 UIBezierPath 这个类, 或者是 文字和图片的drawInRect 方法绘制.</p>
 <p>这些绘制方法在有上下文的环境中可以混合使用UIGraphicsGetCurrentContext()函数,CGPathCreateMutable()函数,UIBezierPath类, 都可以绘制包括路径在内的很多基本的形状. 他们都有一些各自的优缺点, 比如 用UIGraphicsGetCurrentContext()函数给矩形设置圆角比较麻烦 但是使用UIBezierPath 就可以非常简单给指定角设置圆角.</p>
-<p>以下是使用不同的绘制方式实现不同的效果:</p>
-<p>1,绘制一个带边框的圆形图片.</p>
+<p>以下是使用不同的绘制方式实现不同的效果:<br><a id="more"></a><br>1,绘制一个带边框的圆形图片.</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/1945365-d4e74d348fb2d965.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="2016-11-23 16.03.59.png"></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">CGContextRef context = UIGraphicsGetCurrentContext();</span><br><span class="line">CGContextAddEllipseInRect(context, rect);        </span><br><span class="line">CGContextSetLineWidth(context, lineWidth);    </span><br><span class="line">[boardColor setStroke];</span><br><span class="line">CGContextDrawPath(context, kCGPathEOFillStroke);</span><br><span class="line"></span><br><span class="line">CGRect imageRect = CGRectMake(rect.origin.x + lineWidth / 2, rect.origin.y + lineWidth / 2, rect.size.width - lineWidth, rect.size.height - lineWidth);</span><br><span class="line"></span><br><span class="line">CGContextAddEllipseInRect(context, imageRect);</span><br><span class="line"></span><br><span class="line">CGContextClip(context);</span><br><span class="line"></span><br><span class="line">CGContextDrawPath(context, kCGPathEOFillStroke);</span><br><span class="line"></span><br><span class="line">CGContextSaveGState(context); </span><br><span class="line"></span><br><span class="line">CGContextTranslateCTM(context, 0.0, self.bounds.size.height);</span><br><span class="line">CGContextScaleCTM(context, 1, -1);</span><br><span class="line">CGRect re = rect;</span><br><span class="line">re.origin.y = self.bounds.size.height - rect.size.height - rect.origin.y;</span><br><span class="line"></span><br><span class="line">CGContextDrawImage(context, re, image.CGImage);</span><br><span class="line"></span><br><span class="line">CGContextRestoreGState(context);</span><br></pre></td></tr></table></figure>
 <p>其中 CGContextSaveGState(context); 和 CGContextRestoreGState(context);成对出现保存当前context的绘制状态 中间做对一些设置和绘制 然后调用CGContextRestoreGState(context);恢复save之前的context.</p>
@@ -301,8 +300,8 @@
     </a>
   
   
-    <a href="/2017/04/06/java 实现类似iOS方法的对象快速排序/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Java对象排序</div>
+    <a href="/2017/04/06/iOS-随笔/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">iOS 随笔</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -433,19 +432,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">PHP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Charls</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Python</a>
+                <a href="javascript:void(0)" class="js-tag color4">PHP</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">iOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Python</a>
               </li>
              
               <li class="article-tag-list-item">
