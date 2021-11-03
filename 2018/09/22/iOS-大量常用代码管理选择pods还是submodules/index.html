@@ -6,18 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://zjh12580.github.io">
-  <title>Tag: PHP | zhaojh&#39;s blog</title>
+  <title>iOS 大量常用代码管理选择pods还是submodules | zhaojh&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Stay hungry,Stay foolish.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="zhaojh&#39;s blog">
-<meta property="og:url" content="https://zjh12580.github.io/tags/PHP/index.html">
+  <meta name="description" content="一, 开发有一定经验, 肯定都会有很多自己常用的工具类管理类和基类代码. 合理的管理这些代码会大大提升开发的效率. 比如在不同项目中快速使用这些代码, 快速使用自己的代码风格上手开发…  一般会有两个选择来实现这些代码的管理, 一个是cocoapods, 创建私有库/公有库. 另一种就是将自己的代码作为git的子仓">
+<meta name="keywords" content="iOS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="iOS 大量常用代码管理选择pods还是submodules">
+<meta property="og:url" content="https://zjh12580.github.io/2018/09/22/iOS-大量常用代码管理选择pods还是submodules/index.html">
 <meta property="og:site_name" content="zhaojh&#39;s blog">
-<meta property="og:description" content="Stay hungry,Stay foolish.">
+<meta property="og:description" content="一, 开发有一定经验, 肯定都会有很多自己常用的工具类管理类和基类代码. 合理的管理这些代码会大大提升开发的效率. 比如在不同项目中快速使用这些代码, 快速使用自己的代码风格上手开发…  一般会有两个选择来实现这些代码的管理, 一个是cocoapods, 创建私有库/公有库. 另一种就是将自己的代码作为git的子仓">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2021-11-03T09:35:54.736Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="zhaojh&#39;s blog">
-<meta name="twitter:description" content="Stay hungry,Stay foolish.">
+<meta name="twitter:title" content="iOS 大量常用代码管理选择pods还是submodules">
+<meta name="twitter:description" content="一, 开发有一定经验, 肯定都会有很多自己常用的工具类管理类和基类代码. 合理的管理这些代码会大大提升开发的效率. 比如在不同项目中快速使用这些代码, 快速使用自己的代码风格上手开发…  一般会有两个选择来实现这些代码的管理, 一个是cocoapods, 创建私有库/公有库. 另一种就是将自己的代码作为git的子仓">
   
     <link rel="alternative" href="/atom.xml" title="zhaojh&#39;s blog" type="application/atom+xml">
   
@@ -139,109 +141,200 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="tags-iOS-大量常用代码管理选择pods还是submodules" class="article article-type-tags " itemscope="" itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-tags">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/12/10/PHP-Phinx数据库迁移工具/" class="archive-article-date">
-  	<time datetime="2018-12-09T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-10</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/12/10/PHP-Phinx数据库迁移工具/">PHP-Phinx数据库迁移</a>
+    <h1 class="article-title" itemprop="name">
+      iOS 大量常用代码管理选择pods还是submodules
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2018/09/22/iOS-大量常用代码管理选择pods还是submodules/" class="archive-article-date">
+  	<time datetime="2018-09-21T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="一-开发有一定经验-肯定都会有很多自己常用的工具类管理类和基类代码-合理的管理这些代码会大大提升开发的效率-比如在不同项目中快速使用这些代码-快速使用自己的代码风格上手开发…"><a href="#一-开发有一定经验-肯定都会有很多自己常用的工具类管理类和基类代码-合理的管理这些代码会大大提升开发的效率-比如在不同项目中快速使用这些代码-快速使用自己的代码风格上手开发…" class="headerlink" title="一, 开发有一定经验, 肯定都会有很多自己常用的工具类管理类和基类代码. 合理的管理这些代码会大大提升开发的效率. 比如在不同项目中快速使用这些代码, 快速使用自己的代码风格上手开发…"></a>一, 开发有一定经验, 肯定都会有很多自己常用的工具类管理类和基类代码. 合理的管理这些代码会大大提升开发的效率. 比如在不同项目中快速使用这些代码, 快速使用自己的代码风格上手开发…</h3><blockquote>
+<ul>
+<li>一般会有两个选择来实现这些代码的管理, 一个是cocoapods, 创建私有库/公有库. 另一种就是将自己的代码作为git的子仓</li>
+</ul>
+</blockquote>
+<a id="more"></a>
+<p>1, 使用cocoapods管理常用代码, 将自己的代码文件做成私有库, 更新代码时要重新更新自己库的pods版本. 而且项目中也需要更新最新版本去使用.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">/// 更新自己pods代码的话 一般需要执行两个命令: 验证和推送更新</span><br><span class="line">pod spec lint</span><br><span class="line">pod trunk push</span><br><span class="line"></span><br><span class="line">/// 还需要app项目去更新</span><br><span class="line">pod updata xx</span><br></pre></td></tr></table></figure>
+<p>缺点是更新了常用类还是比较麻烦的, 优点是集成起来比较方便! </p>
+<p>2, 使用git管理常用代码, 将自己的常用代码文件作成一个git仓库. 在其他app项目的仓库中添加一个子仓. 这样两个仓库都可以独立管理代码.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/// 在app项目根目录中 url是常用代码仓库 path是子模块路径 这个路径应在app根目录下</span><br><span class="line">git submodule add &lt;url&gt; &lt;path&gt;</span><br></pre></td></tr></table></figure>
+<p>添加子模块后更新常用库代码很简单, 就是提交到git而已. </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[submodule &quot;submodules&quot;]</span><br><span class="line">    path = submodules</span><br><span class="line">    url = git@github.com:zjh12580/submodules.git</span><br></pre></td></tr></table></figure>
+<p>更新了常用类子仓的代码后, app项目中的git会出现改变, 代表着子仓的一次更新, 将子仓的更新提交后, 代表着app项目的git引用了这次子仓的更新. </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Subproject commit 6dc673849b67ec0e320b07e2953e398331219394</span><br></pre></td></tr></table></figure>
+<p>后面的事情就是独立管理两个git仓库就行了. 独立管理自己的常用代码的同时, 快速引用到各个app项目中, 避免了copy粘贴代码文件. </p>
+<blockquote>
+<ul>
+<li>也可以将常用代码仓做成一个可以测试的工程项目, 工程中引用纯代码文件的子仓, 测试完毕后再将纯代码文件的子仓引用到app项目中.</li>
+</ul>
+</blockquote>
+<p>总结: cocoapods的方式和引用子仓的方式各有优缺点, 基本不用更新修改代码的可以选择cocoapods私有库方式. 有频繁更新修改代码文件的可以选择引用子仓方式!</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">PHP</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">iOS</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/PHP//" class="article-tag-list-link color4">PHP</a>
+        			<a href="/categories/iOS//" class="article-tag-list-link color4">iOS</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://zjh12580.github.io/2018/09/22/iOS-大量常用代码管理选择pods还是submodules/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/11/28/PHP-环境搭建/" class="archive-article-date">
-  	<time datetime="2018-11-27T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-28</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2018/11/19/Python-爬取网页数据/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          简易爬取网页数据,存入本地mysql数据库
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/09/13/iOS-RAC+MVVM/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">RAC+MVVM开发模式</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/11/28/PHP-环境搭建/">Mac PHP环境搭建</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">PHP</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#一-开发有一定经验-肯定都会有很多自己常用的工具类管理类和基类代码-合理的管理这些代码会大大提升开发的效率-比如在不同项目中快速使用这些代码-快速使用自己的代码风格上手开发…"><span class="toc-number">1.</span> <span class="toc-text">一, 开发有一定经验, 肯定都会有很多自己常用的工具类管理类和基类代码. 合理的管理这些代码会大大提升开发的效率. 比如在不同项目中快速使用这些代码, 快速使用自己的代码风格上手开发…</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -264,9 +357,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
