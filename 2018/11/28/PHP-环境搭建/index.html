@@ -15,17 +15,15 @@
 <meta property="og:site_name" content="zhaojh&#39;s blog">
 <meta property="og:description" content="一, 用终端登录远程1, 下载私钥放在~&#x2F;.ssh目录2, 在~&#x2F;.ssh&#x2F;config中添加配置1234567Host your-custom-host-name  #自定义一个名字HostName xxx                #你的主机hostUser root                   #userPort 22ProxyCommand corkscrew xxx 3008">
 <meta property="og:locale">
-<meta property="og:image" content="https://zjh12580.github.io/2018/11/28/PHP-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/phpstorm-config-1.png">
-<meta property="og:image" content="https://zjh12580.github.io/2018/11/28/PHP-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/phpstorm-config-2.png">
-<meta property="og:image" content="https://zjh12580.github.io/2018/11/28/PHP-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/phpstorm-config-3.png">
+<meta property="og:image" content="https://github.com/zjh12580/zjh12580.github.io/blob/master/img/phpstorm-config-1.png?raw=true">
+<meta property="og:image" content="https://github.com/zjh12580/zjh12580.github.io/blob/master/img/phpstorm-config-2.png?raw=true">
+<meta property="og:image" content="https://github.com/zjh12580/zjh12580.github.io/blob/master/img/phpstorm-config-3.png?raw=true">
 <meta property="article:published_time" content="2018-11-27T16:00:00.000Z">
-<meta property="article:modified_time" content="2019-02-27T03:49:20.000Z">
+<meta property="article:modified_time" content="2023-02-23T09:58:32.518Z">
 <meta property="article:author" content="zhaojh">
 <meta property="article:tag" content="PHP">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://zjh12580.github.io/2018/11/28/PHP-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/phpstorm-config-1.png">
-  
-    <link rel="alternative" href="/atom.xml" title="zhaojh&#39;s blog" type="application/atom+xml">
+<meta name="twitter:image" content="https://github.com/zjh12580/zjh12580.github.io/blob/master/img/phpstorm-config-1.png?raw=true">
   
   
     <link rel="icon" href="/favicon.png">
@@ -52,7 +50,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="/img/header.jpg" class="js-avatar">
+			<img src="https://github.com/zjh12580/zjh12580.github.io/blob/master/img/header.jpg?raw=true" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/"></a></h1>
@@ -92,7 +90,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="/img/header.jpg" class="js-avatar">
+				<img src="https://github.com/zjh12580/zjh12580.github.io/blob/master/img/header.jpg?raw=true" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author"></h1>
@@ -165,12 +163,12 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Load key &quot;/Users/zhaojh/.ssh/xxx.ssh-rsa&quot;: bad permissions</span><br><span class="line">root@xxxxxx&#x27;s password:</span><br><span class="line"></span><br><span class="line">---解决: 给私钥加一下权限</span><br><span class="line">cd ~/.ssh</span><br><span class="line">ls -l</span><br><span class="line">然后chmod命令给你的私钥加上rw权限,最终效果是: -rw------- . </span><br></pre></td></tr></table></figure>
 <h3 id="3-3-再次执行-ssh-your-custom-host-name-连接成功"><a href="#3-3-再次执行-ssh-your-custom-host-name-连接成功" class="headerlink" title="3.3 再次执行 ssh your-custom-host-name 连接成功"></a>3.3 再次执行 <code>ssh your-custom-host-name</code> 连接成功</h3><br>
 
-<h2 id="二-配置PHPStorm"><a href="#二-配置PHPStorm" class="headerlink" title="二, 配置PHPStorm"></a>二, 配置PHPStorm</h2><h3 id="1-选择-Tools-gt-Deployment-gt-Configuration-点击新增一个配置"><a href="#1-选择-Tools-gt-Deployment-gt-Configuration-点击新增一个配置" class="headerlink" title="1, 选择 Tools-&gt;Deployment-&gt;Configuration 点击新增一个配置"></a>1, 选择 <code>Tools-&gt;Deployment-&gt;Configuration</code> 点击新增一个配置</h3><p>Connection Tab<br><img src="/2018/11/28/PHP-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/phpstorm-config-1.png"></p>
+<h2 id="二-配置PHPStorm"><a href="#二-配置PHPStorm" class="headerlink" title="二, 配置PHPStorm"></a>二, 配置PHPStorm</h2><h3 id="1-选择-Tools-gt-Deployment-gt-Configuration-点击新增一个配置"><a href="#1-选择-Tools-gt-Deployment-gt-Configuration-点击新增一个配置" class="headerlink" title="1, 选择 Tools-&gt;Deployment-&gt;Configuration 点击新增一个配置"></a>1, 选择 <code>Tools-&gt;Deployment-&gt;Configuration</code> 点击新增一个配置</h3><p>Connection Tab<br><img src="https://github.com/zjh12580/zjh12580.github.io/blob/master/img/phpstorm-config-1.png?raw=true" alt="/img/phpstorm-config-1.png"></p>
 <p>注意: 上面Root path 是映射到服务器上的地址, Port随便写一下, 下面会用命令映射</p>
-<p>Mappings Tab<br><img src="/2018/11/28/PHP-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/phpstorm-config-2.png"></p>
+<p>Mappings Tab<br><img src="https://github.com/zjh12580/zjh12580.github.io/blob/master/img/phpstorm-config-2.png?raw=true" alt="/img/phpstorm-config-2.png"></p>
 <br>
 
-<h3 id="2-选择-Tools-gt-Deployment-gt-Options"><a href="#2-选择-Tools-gt-Deployment-gt-Options" class="headerlink" title="2, 选择 Tools-&gt;Deployment-&gt;Options"></a>2, 选择 <code>Tools-&gt;Deployment-&gt;Options</code></h3><img src="/2018/11/28/PHP-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/phpstorm-config-3.png"> 
+<h3 id="2-选择-Tools-gt-Deployment-gt-Options"><a href="#2-选择-Tools-gt-Deployment-gt-Options" class="headerlink" title="2, 选择 Tools-&gt;Deployment-&gt;Options"></a>2, 选择 <code>Tools-&gt;Deployment-&gt;Options</code></h3><img src="https://github.com/zjh12580/zjh12580.github.io/blob/master/img/phpstorm-config-3.png?raw=true" alt="/img/phpstorm-config-3.png"> 
 
 <br>
 
@@ -359,7 +357,7 @@
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
-		showTags: true
+		showTags: false
 	}
 </script>
 
@@ -425,11 +423,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">java</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color5">java</a>
               </li>
             
             <div class="clearfix"></div>
