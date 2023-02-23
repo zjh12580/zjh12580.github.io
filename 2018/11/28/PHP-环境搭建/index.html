@@ -15,15 +15,15 @@
 <meta property="og:site_name" content="zhaojh&#39;s blog">
 <meta property="og:description" content="一, 用终端登录远程1, 下载私钥放在~&#x2F;.ssh目录2, 在~&#x2F;.ssh&#x2F;config中添加配置1234567Host your-custom-host-name  #自定义一个名字HostName xxx                #你的主机hostUser root                   #userPort 22ProxyCommand corkscrew xxx 3008">
 <meta property="og:locale">
-<meta property="og:image" content="https://github.com/zjh12580/zjh12580.github.io/blob/master/img/phpstorm-config-1.png?raw=true">
-<meta property="og:image" content="https://github.com/zjh12580/zjh12580.github.io/blob/master/img/phpstorm-config-2.png?raw=true">
-<meta property="og:image" content="https://github.com/zjh12580/zjh12580.github.io/blob/master/img/phpstorm-config-3.png?raw=true">
+<meta property="og:image" content="https://zjh12580.github.io/2018/11/28/PHP-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/phpstorm-config-1.png">
+<meta property="og:image" content="https://zjh12580.github.io/2018/11/28/PHP-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/phpstorm-config-2.png">
+<meta property="og:image" content="https://zjh12580.github.io/2018/11/28/PHP-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/phpstorm-config-3.png">
 <meta property="article:published_time" content="2018-11-27T16:00:00.000Z">
-<meta property="article:modified_time" content="2023-02-23T09:58:32.518Z">
+<meta property="article:modified_time" content="2023-02-23T11:31:20.061Z">
 <meta property="article:author" content="zhaojh">
 <meta property="article:tag" content="PHP">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://github.com/zjh12580/zjh12580.github.io/blob/master/img/phpstorm-config-1.png?raw=true">
+<meta name="twitter:image" content="https://zjh12580.github.io/2018/11/28/PHP-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/phpstorm-config-1.png">
   
   
     <link rel="icon" href="/favicon.png">
@@ -50,7 +50,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="https://github.com/zjh12580/zjh12580.github.io/blob/master/img/header.jpg?raw=true" class="js-avatar">
+			<img src="https://upload.jianshu.io/users/upload_avatars/1945365/1b6be21a08e4.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/"></a></h1>
@@ -90,7 +90,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="https://github.com/zjh12580/zjh12580.github.io/blob/master/img/header.jpg?raw=true" class="js-avatar">
+				<img src="https://upload.jianshu.io/users/upload_avatars/1945365/1b6be21a08e4.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author"></h1>
@@ -163,13 +163,14 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Load key &quot;/Users/zhaojh/.ssh/xxx.ssh-rsa&quot;: bad permissions</span><br><span class="line">root@xxxxxx&#x27;s password:</span><br><span class="line"></span><br><span class="line">---解决: 给私钥加一下权限</span><br><span class="line">cd ~/.ssh</span><br><span class="line">ls -l</span><br><span class="line">然后chmod命令给你的私钥加上rw权限,最终效果是: -rw------- . </span><br></pre></td></tr></table></figure>
 <h3 id="3-3-再次执行-ssh-your-custom-host-name-连接成功"><a href="#3-3-再次执行-ssh-your-custom-host-name-连接成功" class="headerlink" title="3.3 再次执行 ssh your-custom-host-name 连接成功"></a>3.3 再次执行 <code>ssh your-custom-host-name</code> 连接成功</h3><br>
 
-<h2 id="二-配置PHPStorm"><a href="#二-配置PHPStorm" class="headerlink" title="二, 配置PHPStorm"></a>二, 配置PHPStorm</h2><h3 id="1-选择-Tools-gt-Deployment-gt-Configuration-点击新增一个配置"><a href="#1-选择-Tools-gt-Deployment-gt-Configuration-点击新增一个配置" class="headerlink" title="1, 选择 Tools-&gt;Deployment-&gt;Configuration 点击新增一个配置"></a>1, 选择 <code>Tools-&gt;Deployment-&gt;Configuration</code> 点击新增一个配置</h3><p>Connection Tab<br><img src="https://github.com/zjh12580/zjh12580.github.io/blob/master/img/phpstorm-config-1.png?raw=true" alt="/img/phpstorm-config-1.png"></p>
+<h2 id="二-配置PHPStorm"><a href="#二-配置PHPStorm" class="headerlink" title="二, 配置PHPStorm"></a>二, 配置PHPStorm</h2><h3 id="1-选择-Tools-gt-Deployment-gt-Configuration-点击新增一个配置"><a href="#1-选择-Tools-gt-Deployment-gt-Configuration-点击新增一个配置" class="headerlink" title="1, 选择 Tools-&gt;Deployment-&gt;Configuration 点击新增一个配置"></a>1, 选择 <code>Tools-&gt;Deployment-&gt;Configuration</code> 点击新增一个配置</h3><p>Connection Tab</p>
+<p><img src="/2018/11/28/PHP-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/phpstorm-config-1.png" alt="image"></p>
 <p>注意: 上面Root path 是映射到服务器上的地址, Port随便写一下, 下面会用命令映射</p>
-<p>Mappings Tab<br><img src="https://github.com/zjh12580/zjh12580.github.io/blob/master/img/phpstorm-config-2.png?raw=true" alt="/img/phpstorm-config-2.png"></p>
+<p>Mappings Tab</p>
+<p><img src="/2018/11/28/PHP-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/phpstorm-config-2.png" alt="image"></p>
 <br>
 
-<h3 id="2-选择-Tools-gt-Deployment-gt-Options"><a href="#2-选择-Tools-gt-Deployment-gt-Options" class="headerlink" title="2, 选择 Tools-&gt;Deployment-&gt;Options"></a>2, 选择 <code>Tools-&gt;Deployment-&gt;Options</code></h3><img src="https://github.com/zjh12580/zjh12580.github.io/blob/master/img/phpstorm-config-3.png?raw=true" alt="/img/phpstorm-config-3.png"> 
-
+<h3 id="2-选择-Tools-gt-Deployment-gt-Options"><a href="#2-选择-Tools-gt-Deployment-gt-Options" class="headerlink" title="2, 选择 Tools-&gt;Deployment-&gt;Options"></a>2, 选择 <code>Tools-&gt;Deployment-&gt;Options</code></h3><p><img src="/2018/11/28/PHP-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/phpstorm-config-3.png" alt="image"></p>
 <br>
 
 <h3 id="3-执行ssh-L-端口-127-0-0-1-22-your-custom-host-name-fN-your-custom-host-name-是上面自定义host名字"><a href="#3-执行ssh-L-端口-127-0-0-1-22-your-custom-host-name-fN-your-custom-host-name-是上面自定义host名字" class="headerlink" title="3,  执行ssh -L 端口:127.0.0.1:22  your-custom-host-name  -fN  #your-custom-host-name 是上面自定义host名字"></a>3,  执行<code>ssh -L 端口:127.0.0.1:22  your-custom-host-name  -fN</code>  #your-custom-host-name 是上面自定义host名字</h3><p>成功之后, 改动php文件 然后 <code>command+s</code> 保存就会自动上传到服务器</p>
@@ -178,11 +179,7 @@
 <h3 id="4-如果代码从版本仓库clone到本地的-第一次要先将本地代码同步到服务器-Tools-gt-Deployment"><a href="#4-如果代码从版本仓库clone到本地的-第一次要先将本地代码同步到服务器-Tools-gt-Deployment" class="headerlink" title="4,如果代码从版本仓库clone到本地的 第一次要先将本地代码同步到服务器 Tools-&gt;Deployment"></a>4,如果代码从版本仓库clone到本地的 第一次要先将本地代码同步到服务器 <code>Tools-&gt;Deployment</code></h3><p>最后在webroot下新建一个index.php文件 写上一句 <code>echo &#39;Helloworld!&#39;;</code> 然后浏览器访问 http:&#x2F;&#x2F;{domain}&#x2F;index.php 如果看到  <code>Helloworld!</code> 恭喜成功了!</p>
 <br>
 
-<h2 id="三-adminer-php-登录mysql数据库"><a href="#三-adminer-php-登录mysql数据库" class="headerlink" title="三,adminer.php 登录mysql数据库"></a>三,adminer.php 登录mysql数据库</h2><br>
-### 1,相比`phpMyAdmin`, `adminer.php`更方便就一个文件,到`https://www.adminer.org/` 去下载
-
-
-<h3 id="2-下载之后去掉版本号之后为adminer-php-放到webroot下"><a href="#2-下载之后去掉版本号之后为adminer-php-放到webroot下" class="headerlink" title="2,下载之后去掉版本号之后为adminer.php 放到webroot下"></a>2,下载之后去掉版本号之后为<code>adminer.php</code> 放到webroot下</h3><p>然后浏览器访问 http:&#x2F;&#x2F;{domain}&#x2F;adminer.php 就会有数据库登录界面</p>
+<h2 id="三-adminer-php-登录mysql数据库"><a href="#三-adminer-php-登录mysql数据库" class="headerlink" title="三,adminer.php 登录mysql数据库"></a>三,adminer.php 登录mysql数据库</h2><h3 id="1-相比phpMyAdmin-adminer-php更方便就一个文件-到https-www-adminer-org-去下载"><a href="#1-相比phpMyAdmin-adminer-php更方便就一个文件-到https-www-adminer-org-去下载" class="headerlink" title="1,相比phpMyAdmin, adminer.php更方便就一个文件,到https://www.adminer.org/ 去下载"></a>1,相比<code>phpMyAdmin</code>, <code>adminer.php</code>更方便就一个文件,到<code>https://www.adminer.org/</code> 去下载</h3><h3 id="2-下载之后去掉版本号之后为adminer-php-放到webroot下"><a href="#2-下载之后去掉版本号之后为adminer-php-放到webroot下" class="headerlink" title="2,下载之后去掉版本号之后为adminer.php 放到webroot下"></a>2,下载之后去掉版本号之后为<code>adminer.php</code> 放到webroot下</h3><p>然后浏览器访问 http:&#x2F;&#x2F;{domain}&#x2F;adminer.php 就会有数据库登录界面</p>
 <br>
 
 <p>步骤一连接服务器之后 执行<code> env | grep mysql</code>  会返回你mysql的登录信息</p>
@@ -307,7 +304,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-%E7%94%A8%E7%BB%88%E7%AB%AF%E7%99%BB%E5%BD%95%E8%BF%9C%E7%A8%8B"><span class="toc-number">1.</span> <span class="toc-text">一, 用终端登录远程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E4%B8%8B%E8%BD%BD%E7%A7%81%E9%92%A5%E6%94%BE%E5%9C%A8-ssh%E7%9B%AE%E5%BD%95"><span class="toc-number">1.1.</span> <span class="toc-text">1, 下载私钥放在~&#x2F;.ssh目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%9C%A8-ssh-config%E4%B8%AD%E6%B7%BB%E5%8A%A0%E9%85%8D%E7%BD%AE"><span class="toc-number">1.2.</span> <span class="toc-text">2, 在~&#x2F;.ssh&#x2F;config中添加配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-%E5%86%8D%E6%AC%A1%E6%89%A7%E8%A1%8C-ssh-your-custom-host-name-%E8%BF%9E%E6%8E%A5%E6%88%90%E5%8A%9F"><span class="toc-number">1.3.</span> <span class="toc-text">3.3 再次执行 ssh your-custom-host-name 连接成功</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-%E9%85%8D%E7%BD%AEPHPStorm"><span class="toc-number">2.</span> <span class="toc-text">二, 配置PHPStorm</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E9%80%89%E6%8B%A9-Tools-gt-Deployment-gt-Configuration-%E7%82%B9%E5%87%BB%E6%96%B0%E5%A2%9E%E4%B8%80%E4%B8%AA%E9%85%8D%E7%BD%AE"><span class="toc-number">2.1.</span> <span class="toc-text">1, 选择 Tools-&gt;Deployment-&gt;Configuration 点击新增一个配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E9%80%89%E6%8B%A9-Tools-gt-Deployment-gt-Options"><span class="toc-number">2.2.</span> <span class="toc-text">2, 选择 Tools-&gt;Deployment-&gt;Options</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%89%A7%E8%A1%8Cssh-L-%E7%AB%AF%E5%8F%A3-127-0-0-1-22-your-custom-host-name-fN-your-custom-host-name-%E6%98%AF%E4%B8%8A%E9%9D%A2%E8%87%AA%E5%AE%9A%E4%B9%89host%E5%90%8D%E5%AD%97"><span class="toc-number">2.3.</span> <span class="toc-text">3,  执行ssh -L 端口:127.0.0.1:22  your-custom-host-name  -fN  #your-custom-host-name 是上面自定义host名字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%A6%82%E6%9E%9C%E4%BB%A3%E7%A0%81%E4%BB%8E%E7%89%88%E6%9C%AC%E4%BB%93%E5%BA%93clone%E5%88%B0%E6%9C%AC%E5%9C%B0%E7%9A%84-%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%A6%81%E5%85%88%E5%B0%86%E6%9C%AC%E5%9C%B0%E4%BB%A3%E7%A0%81%E5%90%8C%E6%AD%A5%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8-Tools-gt-Deployment"><span class="toc-number">2.4.</span> <span class="toc-text">4,如果代码从版本仓库clone到本地的 第一次要先将本地代码同步到服务器 Tools-&gt;Deployment</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89-adminer-php-%E7%99%BB%E5%BD%95mysql%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-number">3.</span> <span class="toc-text">三,adminer.php 登录mysql数据库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E4%B8%8B%E8%BD%BD%E4%B9%8B%E5%90%8E%E5%8E%BB%E6%8E%89%E7%89%88%E6%9C%AC%E5%8F%B7%E4%B9%8B%E5%90%8E%E4%B8%BAadminer-php-%E6%94%BE%E5%88%B0webroot%E4%B8%8B"><span class="toc-number">3.1.</span> <span class="toc-text">2,下载之后去掉版本号之后为adminer.php 放到webroot下</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-%E7%94%A8%E7%BB%88%E7%AB%AF%E7%99%BB%E5%BD%95%E8%BF%9C%E7%A8%8B"><span class="toc-number">1.</span> <span class="toc-text">一, 用终端登录远程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E4%B8%8B%E8%BD%BD%E7%A7%81%E9%92%A5%E6%94%BE%E5%9C%A8-ssh%E7%9B%AE%E5%BD%95"><span class="toc-number">1.1.</span> <span class="toc-text">1, 下载私钥放在~&#x2F;.ssh目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%9C%A8-ssh-config%E4%B8%AD%E6%B7%BB%E5%8A%A0%E9%85%8D%E7%BD%AE"><span class="toc-number">1.2.</span> <span class="toc-text">2, 在~&#x2F;.ssh&#x2F;config中添加配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-%E5%86%8D%E6%AC%A1%E6%89%A7%E8%A1%8C-ssh-your-custom-host-name-%E8%BF%9E%E6%8E%A5%E6%88%90%E5%8A%9F"><span class="toc-number">1.3.</span> <span class="toc-text">3.3 再次执行 ssh your-custom-host-name 连接成功</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-%E9%85%8D%E7%BD%AEPHPStorm"><span class="toc-number">2.</span> <span class="toc-text">二, 配置PHPStorm</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E9%80%89%E6%8B%A9-Tools-gt-Deployment-gt-Configuration-%E7%82%B9%E5%87%BB%E6%96%B0%E5%A2%9E%E4%B8%80%E4%B8%AA%E9%85%8D%E7%BD%AE"><span class="toc-number">2.1.</span> <span class="toc-text">1, 选择 Tools-&gt;Deployment-&gt;Configuration 点击新增一个配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E9%80%89%E6%8B%A9-Tools-gt-Deployment-gt-Options"><span class="toc-number">2.2.</span> <span class="toc-text">2, 选择 Tools-&gt;Deployment-&gt;Options</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%89%A7%E8%A1%8Cssh-L-%E7%AB%AF%E5%8F%A3-127-0-0-1-22-your-custom-host-name-fN-your-custom-host-name-%E6%98%AF%E4%B8%8A%E9%9D%A2%E8%87%AA%E5%AE%9A%E4%B9%89host%E5%90%8D%E5%AD%97"><span class="toc-number">2.3.</span> <span class="toc-text">3,  执行ssh -L 端口:127.0.0.1:22  your-custom-host-name  -fN  #your-custom-host-name 是上面自定义host名字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%A6%82%E6%9E%9C%E4%BB%A3%E7%A0%81%E4%BB%8E%E7%89%88%E6%9C%AC%E4%BB%93%E5%BA%93clone%E5%88%B0%E6%9C%AC%E5%9C%B0%E7%9A%84-%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%A6%81%E5%85%88%E5%B0%86%E6%9C%AC%E5%9C%B0%E4%BB%A3%E7%A0%81%E5%90%8C%E6%AD%A5%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8-Tools-gt-Deployment"><span class="toc-number">2.4.</span> <span class="toc-text">4,如果代码从版本仓库clone到本地的 第一次要先将本地代码同步到服务器 Tools-&gt;Deployment</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89-adminer-php-%E7%99%BB%E5%BD%95mysql%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-number">3.</span> <span class="toc-text">三,adminer.php 登录mysql数据库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%9B%B8%E6%AF%94phpMyAdmin-adminer-php%E6%9B%B4%E6%96%B9%E4%BE%BF%E5%B0%B1%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6-%E5%88%B0https-www-adminer-org-%E5%8E%BB%E4%B8%8B%E8%BD%BD"><span class="toc-number">3.1.</span> <span class="toc-text">1,相比phpMyAdmin, adminer.php更方便就一个文件,到https:&#x2F;&#x2F;www.adminer.org&#x2F; 去下载</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E4%B8%8B%E8%BD%BD%E4%B9%8B%E5%90%8E%E5%8E%BB%E6%8E%89%E7%89%88%E6%9C%AC%E5%8F%B7%E4%B9%8B%E5%90%8E%E4%B8%BAadminer-php-%E6%94%BE%E5%88%B0webroot%E4%B8%8B"><span class="toc-number">3.2.</span> <span class="toc-text">2,下载之后去掉版本号之后为adminer.php 放到webroot下</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -403,10 +400,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Python</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Charls</a>
               </li>
              
@@ -419,15 +412,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Python</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">iOS</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color5">java</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">java</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
             
             <div class="clearfix"></div>
